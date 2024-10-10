@@ -1,2 +1,4 @@
 # ShopFromHome
-Progetto IS applicazione per poter fare la spesa comodamente da casa e ritirarla in negozio
+Progetto IS : ShopFromHome
+
+App android per la spesa veloce, prenota la tua spesa e valla solo a ritirare.
