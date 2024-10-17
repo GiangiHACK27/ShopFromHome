@@ -2,11 +2,7 @@
 <project version="4">
   <component name="deploymentTargetSelector">
     <selectionStates>
-<<<<<<< HEAD
-      <SelectionState runConfigName="ShopFromHome">
-=======
       <SelectionState runConfigName="app">
->>>>>>> a65853de920f9537407e72a6c05af36c2d11664a
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
     </selectionStates>

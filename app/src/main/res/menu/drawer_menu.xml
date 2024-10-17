@@ -1,18 +1,24 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <item
-        android:id="@+id/nav_login"
-        android:icon="@drawable/ic_login"
-        android:title="Login" />
-    <item
-        android:id="@+id/nav_register"
-        android:icon="@drawable/ic_register"
-        android:title="Register" />
-    <item
-        android:id="@+id/nav_account"
-        android:icon="@drawable/ic_account"
-        android:title="Account" />
-    <item
-        android:id="@+id/nav_about"
-        android:icon="@drawable/ic_info"
-        android:title="Chi Siamo" />
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_login"
+            android:icon="@drawable/ic_login"
+            android:title="Login" />
+        <item
+            android:id="@+id/nav_register"
+            android:icon="@drawable/ic_register"
+            android:title="Register" />
+        <item
+            android:id="@+id/nav_account"
+            android:icon="@drawable/ic_account"
+            android:title="Account" />
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_info"
+            android:title="Chi Siamo" />
+    </group>
 </menu>

@@ -1,9 +1,15 @@
 package com.example.shopfromhome;
 
+import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.EditText;
-import android.widget.TextView;
+import android.view.MenuItem;
+
+import androidx.annotation.NonNull;
+import com.google.android.material.appbar.MaterialToolbar;
+import com.google.android.material.navigation.NavigationView;
+
+import androidx.appcompat.app.ActionBarDrawerToggle;
+import androidx.drawerlayout.widget.DrawerLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -12,14 +18,31 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     private List<Product> productList; // Lista di prodotti
+    private DrawerLayout drawerLayout;
+    private ActionBarDrawerToggle toggle;
+    private NavigationView navigationView;
+    private MaterialToolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        // Configura la Toolbar
+        toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+
+        // Configura il DrawerLayout e il toggle
+        drawerLayout = findViewById(R.id.drawer_layout);
+        navigationView = findViewById(R.id.navigation_view);
+        navigationView.setNavigationItemSelectedListener(this);
+
+        toggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
+        drawerLayout.addDrawerListener(toggle);
+        toggle.syncState();
 
         // Inizializza la lista dei prodotti
         initializeProductList();
@@ -48,7 +71,39 @@ public class MainActivity extends AppCompatActivity {
         productList.add(new Product("Peach", 1.49, "https://upload.wikimedia.org/wikipedia/commons/0/06/Peach.jpg"));
     }
 
-    public void cliccato(View v) {
-        // Funzione per gestire il clic (da implementare)
+    // Gestione della selezione degli elementi nel NavigationView
+    @Override
+    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+        int id = item.getItemId();
+
+        if (id == R.id.nav_login) {
+            Intent intent = new Intent(this, LoginActivity.class);
+            startActivity(intent);
+        } else if (id == R.id.nav_register) {
+            // Apri l'activity di registrazione (implementa LoginActivity)
+            Intent intent = new Intent(this, RegisterActivity.class);
+            startActivity(intent);
+        } else if (id == R.id.nav_account) {
+            // Apri l'activity di account (implementa AccountActivity)
+            Intent intent = new Intent(this, AccountActivity.class);
+            startActivity(intent);
+        } else if (id == R.id.nav_about) {
+            // Apri l'activity di "Chi siamo"
+            Intent intent = new Intent(this, AboutActivity.class);
+            startActivity(intent);
+        }
+
+        drawerLayout.closeDrawers();
+        return true;
+    }
+
+    // Override per gestire il back button quando il drawer è aperto
+    @Override
+    public void onBackPressed() {
+        if (drawerLayout.isDrawerOpen(navigationView)) {
+            drawerLayout.closeDrawers();
+        } else {
+            super.onBackPressed();
+        }
     }
 }

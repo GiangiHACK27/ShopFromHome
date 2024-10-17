@@ -8,7 +8,6 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-
 import com.squareup.picasso.Picasso;
 
 import java.util.List;
@@ -23,16 +22,21 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ViewHold
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.product_item, parent, false);
+        View view = LayoutInflater.from(parent.getContext())
+                .inflate(R.layout.product_item, parent, false);
         return new ViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull ProductAdapter.ViewHolder holder, int position) {
         Product product = productList.get(position);
         holder.productName.setText(product.getName());
         holder.productPrice.setText("$" + product.getPrice());
-        Picasso.get().load(product.getImageUrl()).into(holder.productImage); // Carica l'immagine
+        Picasso.get()
+                .load(product.getImageUrl())
+                .placeholder(R.drawable.ic_placeholder) // Immagine di placeholder
+                .error(R.drawable.ic_error) // Immagine da mostrare in caso di errore
+                .into(holder.productImage);
     }
 
     @Override
@@ -41,11 +45,10 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ViewHold
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
-        public TextView productName;
-        public TextView productPrice;
+        public TextView productName, productPrice;
         public ImageView productImage;
 
-        public ViewHolder(View itemView) {
+        public ViewHolder(@NonNull View itemView) {
             super(itemView);
             productName = itemView.findViewById(R.id.product_name);
             productPrice = itemView.findViewById(R.id.product_price);

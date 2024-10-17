@@ -1,4 +1,5 @@
-<resources>
-    <string name="app_name">ShopFromHome</string>
-    <string name="inserisci_il_titolo">Inserisci il titolo</string>
-</resources>
+ <resources>
+     <string name="app_name">ShopFromHome</string>
+     <string name="navigation_drawer_open">Apri menù</string>
+     <string name="navigation_drawer_close">Chiudi menù</string>
+ </resources>
