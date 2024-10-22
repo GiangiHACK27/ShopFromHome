@@ -1,22 +1,30 @@
 package com.example.shopfromhome;
 
+import com.example.shopfromhome.adapter.ProductAdapter;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
-import com.google.android.material.appbar.MaterialToolbar;
-import com.google.android.material.navigation.NavigationView;
-
 import androidx.appcompat.app.ActionBarDrawerToggle;
-import androidx.drawerlayout.widget.DrawerLayout;
-
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.shopfromhome.model.Product;
+import com.example.shopfromhome.network.ApiClient;
+import com.example.shopfromhome.network.ProductApi;
+import com.google.android.material.appbar.MaterialToolbar;
+import com.google.android.material.navigation.NavigationView;
+
 import java.util.ArrayList;
 import java.util.List;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
@@ -25,6 +33,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private ActionBarDrawerToggle toggle;
     private NavigationView navigationView;
     private MaterialToolbar toolbar;
+    private ProductAdapter adapter; // Dichiarazione dell'adapter come variabile globale
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,30 +54,40 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         toggle.syncState();
 
         // Inizializza la lista dei prodotti
-        initializeProductList();
+        productList = new ArrayList<>();
 
         // Configura il RecyclerView
         RecyclerView recyclerView = findViewById(R.id.recycler_view);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        ProductAdapter adapter = new ProductAdapter(productList);
+        adapter = new ProductAdapter(productList);
         recyclerView.setAdapter(adapter);
+
+        // Carica i prodotti dal server
+        loadProducts();
     }
 
-    // Metodo per inizializzare la lista dei prodotti
-    private void initializeProductList() {
-        productList = new ArrayList<>();
+    // Metodo per caricare i prodotti dal server
+    private void loadProducts() {
+        ProductApi productApi = ApiClient.getRetrofitInstance().create(ProductApi.class); // Usa ProductApi qui
+        Call<List<Product>> call = productApi.getProducts();
 
-        // Aggiungi prodotti fittizi alla lista con immagini reali
-        productList.add(new Product("Apple", 0.99, "https://upload.wikimedia.org/wikipedia/commons/1/15/Red_Apple.jpg"));
-        productList.add(new Product("Banana", 0.59, "https://upload.wikimedia.org/wikipedia/commons/8/8a/Banana-Single.jpg"));
-        productList.add(new Product("Orange", 0.79, "https://upload.wikimedia.org/wikipedia/commons/c/c8/Orange_icon.png"));
-        productList.add(new Product("Strawberry", 2.99, "https://upload.wikimedia.org/wikipedia/commons/0/0b/Strawberry.jpg"));
-        productList.add(new Product("Blueberry", 3.49, "https://upload.wikimedia.org/wikipedia/commons/6/6e/Blueberry.jpg"));
-        productList.add(new Product("Pineapple", 1.49, "https://upload.wikimedia.org/wikipedia/commons/5/5d/Pineapple_1.jpg"));
-        productList.add(new Product("Grapes", 2.99, "https://upload.wikimedia.org/wikipedia/commons/1/13/Red_Grapes.jpg"));
-        productList.add(new Product("Watermelon", 0.89, "https://upload.wikimedia.org/wikipedia/commons/5/5c/Watermelon.jpg"));
-        productList.add(new Product("Mango", 1.99, "https://upload.wikimedia.org/wikipedia/commons/1/15/Mango.jpg"));
-        productList.add(new Product("Peach", 1.49, "https://upload.wikimedia.org/wikipedia/commons/0/06/Peach.jpg"));
+        call.enqueue(new Callback<List<Product>>() {
+            @Override
+            public void onResponse(Call<List<Product>> call, Response<List<Product>> response) {
+                if (response.isSuccessful() && response.body() != null) {
+                    productList.clear();
+                    productList.addAll(response.body());
+                    adapter.notifyDataSetChanged(); // Notifica l'adapter che i dati sono cambiati
+                } else {
+                    Toast.makeText(MainActivity.this, "Nessun prodotto trovato", Toast.LENGTH_SHORT).show();
+                }
+            }
+
+            @Override
+            public void onFailure(Call<List<Product>> call, Throwable t) {
+                Toast.makeText(MainActivity.this, "Errore di connessione: " + t.getMessage(), Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 
     // Gestione della selezione degli elementi nel NavigationView
@@ -80,19 +99,15 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             Intent intent = new Intent(this, LoginActivity.class);
             startActivity(intent);
         } else if (id == R.id.nav_register) {
-            // Apri l'activity di registrazione (implementa LoginActivity)
             Intent intent = new Intent(this, RegisterActivity.class);
             startActivity(intent);
         } else if (id == R.id.nav_account) {
-            // Apri l'activity di account (implementa AccountActivity)
             Intent intent = new Intent(this, AccountActivity.class);
             startActivity(intent);
         } else if (id == R.id.nav_about) {
-            // Apri l'activity di "Chi siamo"
             Intent intent = new Intent(this, AboutActivity.class);
             startActivity(intent);
         }
-
         drawerLayout.closeDrawers();
         return true;
     }

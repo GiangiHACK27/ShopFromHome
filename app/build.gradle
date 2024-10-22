@@ -46,4 +46,15 @@ dependencies {
     testImplementation libs.junit
     androidTestImplementation libs.ext.junit
     androidTestImplementation libs.espresso.core
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.9.0'
+
+    // Aggiungi le librerie per la gestione delle dipendenze
+    implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.6.2' // Per l'architettura MVVM (se usata)
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2' // Per ViewModel
+
+    // Opzionale: aggiungi le librerie per la gestione delle coroutine
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.3'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3'
 }
