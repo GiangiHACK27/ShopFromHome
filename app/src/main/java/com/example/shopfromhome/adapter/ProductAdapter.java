@@ -1,5 +1,7 @@
 package com.example.shopfromhome.adapter;
 
+import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,35 +14,49 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import com.example.shopfromhome.R;
 import com.example.shopfromhome.model.Product;
+import com.example.shopfromhome.ui.ProductDetailActivity;
 
 import java.util.List;
 
 public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductViewHolder> {
 
+    private Context context;
     private List<Product> productList;
 
-    public ProductAdapter(List<Product> productList) {
+    // Costruttore
+    public ProductAdapter(Context context, List<Product> productList) {
+        this.context = context;
         this.productList = productList;
     }
 
     @NonNull
     @Override
     public ProductViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_product, parent, false);
+        View view = LayoutInflater.from(context).inflate(R.layout.item_product, parent, false);
         return new ProductViewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull ProductViewHolder holder, int position) {
         Product product = productList.get(position);
+
+        // Setta i dati del prodotto nella view
         holder.productName.setText(product.getName());
-        holder.productDescription.setText(product.getDescription());
         holder.productPrice.setText(String.valueOf(product.getPrice()));
 
         // Carica l'immagine usando Glide
-        Glide.with(holder.itemView.getContext())
-                .load(product.getImageUrl()) // Assicurati che il metodo getImageUrl() esista nel tuo model Product
+        Glide.with(context)
+                .load(product.getImageUrl()) // Assicurati che questo campo contenga l'URL dell'immagine
+                .placeholder(R.drawable.ic_placeholder) // Immagine di placeholder (deve essere presente in drawable)
+                .error(R.drawable.ic_error) // Immagine di errore (deve essere presente in drawable)
                 .into(holder.productImage);
+
+        // Gestisce il click sulla card per aprire la pagina di dettaglio del prodotto
+        holder.itemView.setOnClickListener(v -> {
+            Intent intent = new Intent(context, ProductDetailActivity.class);
+            intent.putExtra("product", product); // Passa l'oggetto Product alla pagina di dettaglio
+            context.startActivity(intent);
+        });
     }
 
     @Override
@@ -48,18 +64,16 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductV
         return productList.size();
     }
 
+    // Classe ViewHolder per il prodotto
     public static class ProductViewHolder extends RecyclerView.ViewHolder {
-        TextView productName;
-        TextView productDescription;
-        TextView productPrice;
-        ImageView productImage; // Aggiungi l'ImageView
+        TextView productName, productPrice;
+        ImageView productImage;
 
         public ProductViewHolder(@NonNull View itemView) {
             super(itemView);
             productName = itemView.findViewById(R.id.product_name);
-            productDescription = itemView.findViewById(R.id.product_description);
             productPrice = itemView.findViewById(R.id.product_price);
-            productImage = itemView.findViewById(R.id.product_image); // Assicurati di avere un ImageView per l'immagine del prodotto
+            productImage = itemView.findViewById(R.id.product_image);
         }
     }
 }

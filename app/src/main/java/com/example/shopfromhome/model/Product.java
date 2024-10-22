@@ -2,7 +2,9 @@ package com.example.shopfromhome.model;
 
 import com.google.gson.annotations.SerializedName;
 
-public class Product {
+import java.io.Serializable;
+
+public class Product implements Serializable {
 
     @SerializedName("id")
     private int id;
@@ -80,5 +82,4 @@ public class Product {
     public void setCategoryId(int categoryId) {
         this.categoryId = categoryId;
     }
-
 }

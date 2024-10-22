@@ -4,10 +4,10 @@
     <selectionStates>
       <SelectionState runConfigName="ShopFromHome">
         <option name="selectionMode" value="DROPDOWN" />
-        <DropdownSelection timestamp="2024-10-22T12:57:29.668258900Z">
+        <DropdownSelection timestamp="2024-10-22T13:01:44.932659600Z">
           <Target type="DEFAULT_BOOT">
             <handle>
-              <DeviceId pluginId="PhysicalDevice" identifier="serial=65kvrozd8hkr8hyt" />
+              <DeviceId pluginId="LocalEmulator" identifier="path=C:\Users\gianl\.android\avd\Pixel_6_API_30.avd" />
             </handle>
           </Target>
         </DropdownSelection>

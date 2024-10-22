@@ -18,6 +18,7 @@
         <activity android:name=".AccountActivity" />
         <activity android:name=".AboutActivity" />
         <activity android:name=".ui.ProductListActivity" />
+        <activity android:name=".ui.ProductDetailActivity" />
 
         <activity
             android:name=".MainActivity"

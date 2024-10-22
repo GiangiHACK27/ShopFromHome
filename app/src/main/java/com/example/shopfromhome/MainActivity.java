@@ -1,6 +1,7 @@
 package com.example.shopfromhome;
 
 import com.example.shopfromhome.adapter.ProductAdapter;
+import com.example.shopfromhome.model.Product;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -13,7 +14,6 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.shopfromhome.model.Product;
 import com.example.shopfromhome.network.ApiClient;
 import com.example.shopfromhome.network.ProductApi;
 import com.google.android.material.appbar.MaterialToolbar;
@@ -28,12 +28,12 @@ import retrofit2.Response;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
-    private List<Product> productList; // Lista di prodotti
+    private List<Product> productList;
     private DrawerLayout drawerLayout;
     private ActionBarDrawerToggle toggle;
     private NavigationView navigationView;
     private MaterialToolbar toolbar;
-    private ProductAdapter adapter; // Dichiarazione dell'adapter come variabile globale
+    private ProductAdapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         // Configura il RecyclerView
         RecyclerView recyclerView = findViewById(R.id.recycler_view);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        adapter = new ProductAdapter(productList);
+        adapter = new ProductAdapter(this, productList); // Passa il contesto e la lista
         recyclerView.setAdapter(adapter);
 
         // Carica i prodotti dal server
@@ -68,7 +68,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     // Metodo per caricare i prodotti dal server
     private void loadProducts() {
-        ProductApi productApi = ApiClient.getRetrofitInstance().create(ProductApi.class); // Usa ProductApi qui
+        ProductApi productApi = ApiClient.getRetrofitInstance().create(ProductApi.class);
         Call<List<Product>> call = productApi.getProducts();
 
         call.enqueue(new Callback<List<Product>>() {
