@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <color name="colorPrimary">#4CAF50</color> <!-- Verde principale -->
-    <color name="colorPrimaryDark">#388E3C</color> <!-- Verde scuro -->
-    <color name="colorAccent">#FFC107</color> <!-- Giallo acceso -->
-    <color name="white">#FFFFFF</color>
-    <color name="black">#000000</color>
-    <color name="background">#F5F5F5</color> <!-- Grigio chiaro per lo sfondo -->
-</resources>
