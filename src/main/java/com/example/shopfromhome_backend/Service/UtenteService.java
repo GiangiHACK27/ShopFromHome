@@ -14,4 +14,13 @@ public class UtenteService {
     public Optional<Utente> findByEmail(String email) {
         return utenteRepository.findByEmail(email);
     }
+
+    public void deleteUser(Long id) {
+        utenteRepository.deleteById(id);
+    }
+
+    // Metodo per ottenere utenti per ruolo
+    public List<Utente> findByRuolo(Ruolo ruolo) {
+        return utenteRepository.findByRuolo(ruolo);
+    }
 }

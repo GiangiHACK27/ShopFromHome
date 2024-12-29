@@ -1,3 +1,7 @@
+import javax.persistence.*;
+import java.time.LocalDateTime;
+import java.util.List;
+
 @Entity
 @Table(name = "ordine")
 public class Ordine {
@@ -15,6 +19,11 @@ public class Ordine {
     @OneToMany(mappedBy = "ordine")
     private List<DettaglioOrdine> dettagliOrdine;
 
+    @Enumerated(EnumType.STRING)
+    @Column(name = "stato")
+    private StatoOrdine stato;  // Aggiunto il campo stato
+
+    // Getter e Setter per id
     public Long getId() {
         return id;
     }
@@ -23,6 +32,7 @@ public class Ordine {
         this.id = id;
     }
 
+    // Getter e Setter per utente
     public Utente getUtente() {
         return utente;
     }
@@ -31,6 +41,7 @@ public class Ordine {
         this.utente = utente;
     }
 
+    // Getter e Setter per dataOrdine
     public LocalDateTime getDataOrdine() {
         return dataOrdine;
     }
@@ -39,11 +50,21 @@ public class Ordine {
         this.dataOrdine = dataOrdine;
     }
 
+    // Getter e Setter per dettagliOrdine
     public List<DettaglioOrdine> getDettagliOrdine() {
         return dettagliOrdine;
     }
 
     public void setDettagliOrdine(List<DettaglioOrdine> dettagliOrdine) {
         this.dettagliOrdine = dettagliOrdine;
+    }
+
+    // Getter e Setter per stato
+    public StatoOrdine getStato() {
+        return stato;
+    }
+
+    public void setStato(StatoOrdine stato) {
+        this.stato = stato;
     }
 }

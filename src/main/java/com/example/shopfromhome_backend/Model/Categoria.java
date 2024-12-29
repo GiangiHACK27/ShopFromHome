@@ -1,13 +1,20 @@
+package com.example.shopfromhome_backend.model;
+
+import jakarta.persistence.*;
+
 @Entity
-@Table(name = "categoria")
 public class Categoria {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "nome")
+    @Column(nullable = false)
     private String nome;
 
+    @Column
+    private String descrizione;
+
+    // Getters e Setters
     public Long getId() {
         return id;
     }
@@ -22,5 +29,13 @@ public class Categoria {
 
     public void setNome(String nome) {
         this.nome = nome;
+    }
+
+    public String getDescrizione() {
+        return descrizione;
+    }
+
+    public void setDescrizione(String descrizione) {
+        this.descrizione = descrizione;
     }
 }

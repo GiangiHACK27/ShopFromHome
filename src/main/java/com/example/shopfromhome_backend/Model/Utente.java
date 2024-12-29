@@ -1,30 +1,30 @@
-@Entity
+import javax.persistence.*;
+import lombok.*;
+import java.util.List;
+
+
+@@Entity
 @Table(name = "utente")
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
 public class Utente {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "nome")
     private String nome;
-
-    @Column(name = "email", unique = true)
     private String email;
 
-    @Column(name = "password")
-    private String password;
-
     @Enumerated(EnumType.STRING)
-    private Ruolo ruolo;
+    private Ruolo ruolo; // Ruolo ENUM
 
-    public String getNome() {
-        return nome;
-    }
+    @OneToMany(mappedBy = "utente")
+    private List<Ordine> ordini;
 
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
+    // Getter e Setter per id
     public Long getId() {
         return id;
     }
@@ -33,6 +33,16 @@ public class Utente {
         this.id = id;
     }
 
+    // Getter e Setter per nome
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    // Getter e Setter per email
     public String getEmail() {
         return email;
     }
@@ -41,14 +51,7 @@ public class Utente {
         this.email = email;
     }
 
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
-
+    // Getter e Setter per ruolo
     public Ruolo getRuolo() {
         return ruolo;
     }

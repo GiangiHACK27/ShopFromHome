@@ -19,4 +19,10 @@ public class UtenteController {
         Optional<Utente> user = utenteService.findByEmail(email);
         return user.map(ResponseEntity::ok).orElseGet(() -> ResponseEntity.notFound().build());
     }
+
+    // Endpoint per ottenere utenti per ruolo
+    @GetMapping("/ruolo/{ruolo}")
+    public List<Utente> getUtentiByRuolo(@PathVariable("ruolo") Ruolo ruolo) {
+        return utenteService.findByRuolo(ruolo);
+    }
 }
