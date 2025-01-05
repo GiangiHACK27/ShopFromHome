@@ -29,8 +29,10 @@ public class ProdottoController {
 
     @PostMapping
     public Prodotto createProduct(@RequestBody Prodotto prodotto) {
+        System.out.println("Ricevuta richiesta per creare prodotto: " + prodotto.getNome()); // Aggiungi questo log
         return prodottoService.createProduct(prodotto);
     }
+
 
     @PutMapping("/{id}")
     public Prodotto updateProduct(@PathVariable Long id, @RequestBody Prodotto prodotto) {
