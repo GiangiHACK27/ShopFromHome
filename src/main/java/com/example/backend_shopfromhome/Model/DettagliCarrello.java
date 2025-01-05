@@ -1,34 +1,49 @@
 package com.example.backend_shopfromhome.Model;
 
-import com.example.backend_shopfromhome.Model.Prodotto;
 import jakarta.persistence.*;
 
 @Entity
+@Table(name = "dettagli_carrello")
+@IdClass(DettagliCarrelloId.class) // Usa una classe separata per la chiave primaria composta
 public class DettagliCarrello {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
 
-    @ManyToOne
-    @JoinColumn(name = "carrello_id")
+    @Id
+    @Column(name = "id_carrello")
+    private Long idCarrello;
+
+    @Id
+    @Column(name = "id_prodotto") // Assicurati che il nome della colonna sia corretto
+    private Long idProdotto;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "id_carrello", insertable = false, updatable = false)
     private Carrello carrello;
 
-    @ManyToOne
-    @JoinColumn(name = "prodotto_id")
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "id_prodotto", insertable = false, updatable = false)
     private Prodotto prodotto;
 
+    @Column(name = "quantita", nullable = false)
     private int quantita;
 
-    // Getter e Setter per id
-    public Long getId() {
-        return id;
+    // Getters e Setters
+
+    public Long getIdCarrello() {
+        return idCarrello;
     }
 
-    public void setId(Long id) {
-        this.id = id;
+    public void setIdCarrello(Long idCarrello) {
+        this.idCarrello = idCarrello;
     }
 
-    // Getter e Setter per carrello
+    public Long getIdProdotto() {
+        return idProdotto;
+    }
+
+    public void setIdProdotto(Long idProdotto) {
+        this.idProdotto = idProdotto;
+    }
+
     public Carrello getCarrello() {
         return carrello;
     }
@@ -37,7 +52,6 @@ public class DettagliCarrello {
         this.carrello = carrello;
     }
 
-    // Getter e Setter per prodotto
     public Prodotto getProdotto() {
         return prodotto;
     }
@@ -46,7 +60,6 @@ public class DettagliCarrello {
         this.prodotto = prodotto;
     }
 
-    // Getter e Setter per quantita
     public int getQuantita() {
         return quantita;
     }

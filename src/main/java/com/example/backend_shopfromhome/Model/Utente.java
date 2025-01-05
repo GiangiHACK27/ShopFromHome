@@ -2,8 +2,10 @@ package com.example.backend_shopfromhome.Model;
 
 import jakarta.persistence.*;
 import lombok.*;
-import java.util.List;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name = "utente")
@@ -15,50 +17,58 @@ public class Utente {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id_utente")
     private Long id;
 
+    @Column(name = "nome", nullable = false)
     private String nome;
+
+    @Column(name = "cognome", nullable = false)
+    private String cognome;
+
+    @Column(name = "email", nullable = false, unique = true)
     private String email;
 
+    @Column(name = "password", nullable = false)
+    private String password;
+
     @Enumerated(EnumType.STRING)
-    private Ruolo ruolo; // Ruolo ENUM
+    @Column(name = "ruolo", nullable = false)
+    private Ruolo ruolo;
 
-    @OneToMany(mappedBy = "utente")
-    private List<Ordine> ordini;
+    @OneToMany(mappedBy = "utente", cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<Ordine> ordini = new ArrayList<>();
 
-    // Getter e Setter per id
-    public Long getId() {
-        return id;
+    @OneToMany(mappedBy = "utente", cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<Carrello> carrelli = new ArrayList<>();
+
+    public void setPassword(String password) {
+        BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
+        this.password = encoder.encode(password);
     }
 
-    public void setId(Long id) {
-        this.id = id;
+    public boolean checkPassword(String rawPassword) {
+        BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
+        return encoder.matches(rawPassword, this.password);
     }
 
-    // Getter e Setter per nome
-    public String getNome() {
-        return nome;
+    public void addOrdine(Ordine ordine) {
+        ordine.setUtente(this);
+        this.ordini.add(ordine);
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public void removeOrdine(Ordine ordine) {
+        ordine.setUtente(null);
+        this.ordini.remove(ordine);
     }
 
-    // Getter e Setter per email
-    public String getEmail() {
-        return email;
+    public void addCarrello(Carrello carrello) {
+        carrello.setUtente(this);
+        this.carrelli.add(carrello);
     }
 
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    // Getter e Setter per ruolo
-    public Ruolo getRuolo() {
-        return ruolo;
-    }
-
-    public void setRuolo(Ruolo ruolo) {
-        this.ruolo = ruolo;
+    public void removeCarrello(Carrello carrello) {
+        carrello.setUtente(null);
+        this.carrelli.remove(carrello);
     }
 }

@@ -1,7 +1,8 @@
 package com.example.backend_shopfromhome.Model;
 
 import jakarta.persistence.*;
-
+import java.math.BigDecimal;
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.List;
 
@@ -10,21 +11,28 @@ import java.util.List;
 public class Ordine {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "ID_Ordine")
     private Long id;
 
     @ManyToOne
-    @JoinColumn(name = "utente_id")
+    @JoinColumn(name = "ID_Utente")
     private Utente utente;
 
-    @Column(name = "data_ordine")
-    private LocalDateTime dataOrdine;
+    @Column(name = "Data_Ritiro", nullable = false)
+    private LocalDate dataRitiro;
+
+    @Column(name = "Totale_Prezzo", nullable = false)
+    private BigDecimal totalePrezzo;
+
+    @Enumerated(EnumType.STRING)
+    @Column(name = "Stato", nullable = false)
+    private StatoOrdine stato;
 
     @OneToMany(mappedBy = "ordine")
     private List<DettaglioOrdine> dettagliOrdine;
 
-    @Enumerated(EnumType.STRING)
-    @Column(name = "stato")
-    private StatoOrdine stato;  // Aggiunto il campo stato
+    @Column(name = "Data_Ordine")
+    private LocalDateTime dataOrdine; // Aggiunto per mappare il campo data_ordine nel database
 
     // Getter e Setter per id
     public Long getId() {
@@ -44,13 +52,31 @@ public class Ordine {
         this.utente = utente;
     }
 
-    // Getter e Setter per dataOrdine
-    public LocalDateTime getDataOrdine() {
-        return dataOrdine;
+    // Getter e Setter per dataRitiro
+    public LocalDate getDataRitiro() {
+        return dataRitiro;
     }
 
-    public void setDataOrdine(LocalDateTime dataOrdine) {
-        this.dataOrdine = dataOrdine;
+    public void setDataRitiro(LocalDate dataRitiro) {
+        this.dataRitiro = dataRitiro;
+    }
+
+    // Getter e Setter per totalePrezzo
+    public BigDecimal getTotalePrezzo() {
+        return totalePrezzo;
+    }
+
+    public void setTotalePrezzo(BigDecimal totalePrezzo) {
+        this.totalePrezzo = totalePrezzo;
+    }
+
+    // Getter e Setter per stato
+    public StatoOrdine getStato() {
+        return stato;
+    }
+
+    public void setStato(StatoOrdine stato) {
+        this.stato = stato;
     }
 
     // Getter e Setter per dettagliOrdine
@@ -62,12 +88,12 @@ public class Ordine {
         this.dettagliOrdine = dettagliOrdine;
     }
 
-    // Getter e Setter per stato
-    public StatoOrdine getStato() {
-        return stato;
+    // Getter e Setter per dataOrdine
+    public LocalDateTime getDataOrdine() {
+        return dataOrdine;
     }
 
-    public void setStato(StatoOrdine stato) {
-        this.stato = stato;
+    public void setDataOrdine(LocalDateTime dataOrdine) {
+        this.dataOrdine = dataOrdine;
     }
 }

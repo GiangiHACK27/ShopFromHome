@@ -2,6 +2,8 @@ package com.example.backend_shopfromhome;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 @SpringBootApplication
 public class BackendShopFromHomeApplication {
@@ -10,4 +12,8 @@ public class BackendShopFromHomeApplication {
         SpringApplication.run(BackendShopFromHomeApplication.class, args);
     }
 
+    @Bean(name = "customPasswordEncoder")
+    public BCryptPasswordEncoder customPasswordEncoder() {
+        return new BCryptPasswordEncoder();
+    }
 }

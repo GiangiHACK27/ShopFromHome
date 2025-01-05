@@ -1,47 +1,41 @@
 package com.example.backend_shopfromhome.Model;
 
 import jakarta.persistence.*;
-import com.example.backend_shopfromhome.Model.DettagliCarrello;
-
-import java.util.List;
+import lombok.*;
+import java.util.HashSet;
+import java.util.Set;
 
 @Entity
+@Table(name = "carrello")
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
 public class Carrello {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    @Column(name = "id_carrello")
+    private Long idCarrello;
 
-    @ManyToOne
-    @JoinColumn(name = "utente_id")
+    @Column(name = "nome_cliente", nullable = false)
+    private String nomeCliente;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "id_utente", nullable = false)
     private Utente utente;
 
-    @OneToMany(mappedBy = "carrello")
-    private List<DettagliCarrello> dettagliCarrello; // Lista di dettagli carrello
+    @OneToMany(mappedBy = "carrello", cascade = CascadeType.ALL, orphanRemoval = true)
+    private Set<DettagliCarrello> dettagliCarrello = new HashSet<>();
 
-    // Getter e Setter per id
-    public Long getId() {
-        return id;
+    // Metodi helper
+    public void addDettaglioCarrello(DettagliCarrello dettaglio) {
+        dettaglio.setCarrello(this);
+        this.dettagliCarrello.add(dettaglio);
     }
 
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    // Getter e Setter per utente
-    public Utente getUtente() {
-        return utente;
-    }
-
-    public void setUtente(Utente utente) {
-        this.utente = utente;
-    }
-
-    // Getter e Setter per dettagliCarrello
-    public List getDettagliCarrello() {
-        return dettagliCarrello;
-    }
-
-    public void setDettagliCarrello(List<DettagliCarrello> dettagliCarrello) {
-        this.dettagliCarrello = dettagliCarrello;
+    public void removeDettaglioCarrello(DettagliCarrello dettaglio) {
+        dettaglio.setCarrello(null);
+        this.dettagliCarrello.remove(dettaglio);
     }
 }

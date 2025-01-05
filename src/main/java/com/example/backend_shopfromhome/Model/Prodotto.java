@@ -1,25 +1,35 @@
 package com.example.backend_shopfromhome.Model;
 
 import jakarta.persistence.*;
+import java.math.BigDecimal;
 
 @Entity
 @Table(name = "prodotto")
 public class Prodotto {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "ID_Prodotto")
     private Long id;
 
+    @Column(name = "Nome", nullable = false)
     private String nome;
-    private double prezzo;
 
-    @ManyToOne
-    @JoinColumn(name = "categoria_id")
-    private Categoria categoria;
+    @Column(name = "Descrizione")
+    private String descrizione;
 
-    private String foto;
+    @Column(name = "Prezzo", nullable = false)
+    private BigDecimal prezzo;
+
+    @Column(name = "Quantità_Disponibile", nullable = false)
     private int quantitaDisponibile;
 
-    private String descrizione; // Aggiunto il campo descrizione
+    @Column(name = "Foto")
+    private String foto;
+
+    @ManyToOne
+    @JoinColumn(name = "ID_Categoria")
+    private Categoria categoria;
 
     // Getter e Setter per id
     public Long getId() {
@@ -39,31 +49,22 @@ public class Prodotto {
         this.nome = nome;
     }
 
+    // Getter e Setter per descrizione
+    public String getDescrizione() {
+        return descrizione;
+    }
+
+    public void setDescrizione(String descrizione) {
+        this.descrizione = descrizione;
+    }
+
     // Getter e Setter per prezzo
-    public double getPrezzo() {
+    public BigDecimal getPrezzo() {
         return prezzo;
     }
 
-    public void setPrezzo(double prezzo) {
+    public void setPrezzo(BigDecimal prezzo) {
         this.prezzo = prezzo;
-    }
-
-    // Getter e Setter per categoria
-    public Categoria getCategoria() {
-        return categoria;
-    }
-
-    public void setCategoria(Categoria categoria) {
-        this.categoria = categoria;
-    }
-
-    // Getter e Setter per foto
-    public String getFoto() {
-        return foto;
-    }
-
-    public void setFoto(String foto) {
-        this.foto = foto;
     }
 
     // Getter e Setter per quantitaDisponibile
@@ -75,12 +76,21 @@ public class Prodotto {
         this.quantitaDisponibile = quantitaDisponibile;
     }
 
-    // Getter e Setter per descrizione
-    public String getDescrizione() {
-        return descrizione;
+    // Getter e Setter per foto
+    public String getFoto() {
+        return foto;
     }
 
-    public void setDescrizione(String descrizione) {
-        this.descrizione = descrizione;
+    public void setFoto(String foto) {
+        this.foto = foto;
+    }
+
+    // Getter e Setter per categoria
+    public Categoria getCategoria() {
+        return categoria;
+    }
+
+    public void setCategoria(Categoria categoria) {
+        this.categoria = categoria;
     }
 }

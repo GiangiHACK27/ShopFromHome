@@ -1,28 +1,29 @@
 package com.example.backend_shopfromhome.Model;
 
 import jakarta.persistence.*;
+import java.math.BigDecimal;
 
 @Entity
 @Table(name = "dettaglio_ordine")
 public class DettaglioOrdine {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "ID_Dettaglio_Ordine")
     private Long id;
 
     @ManyToOne
-    @JoinColumn(name = "ordine_id")
+    @JoinColumn(name = "ID_Ordine")
     private Ordine ordine;
 
     @ManyToOne
-    @JoinColumn(name = "prodotto_id")
+    @JoinColumn(name = "ID_Prodotto")
     private Prodotto prodotto;
 
-    @Column(name = "quantita")
-    private Integer quantita;
+    @Column(name = "Quantità", nullable = false)
+    private int quantita;
 
-    @Column(name = "prezzo_totale")
-    private Double prezzoTotale;
+    @Column(name = "Prezzo_Totale", nullable = false)
+    private BigDecimal prezzoTotale;
 
     // Getter e Setter per id
     public Long getId() {
@@ -52,20 +53,25 @@ public class DettaglioOrdine {
     }
 
     // Getter e Setter per quantita
-    public Integer getQuantita() {
+    public int getQuantita() {
         return quantita;
     }
 
-    public void setQuantita(Integer quantita) {
+    public void setQuantita(int quantita) {
         this.quantita = quantita;
     }
 
     // Getter e Setter per prezzoTotale
-    public Double getPrezzoTotale() {
+    public BigDecimal getPrezzoTotale() {
         return prezzoTotale;
     }
 
-    public void setPrezzoTotale(Double prezzoTotale) {
+    public void setPrezzoTotale(BigDecimal prezzoTotale) {
         this.prezzoTotale = prezzoTotale;
+    }
+
+    // Metodo per calcolare il prezzo totale
+    public void calcolaPrezzoTotale() {
+        this.prezzoTotale = prodotto.getPrezzo().multiply(BigDecimal.valueOf(quantita));
     }
 }

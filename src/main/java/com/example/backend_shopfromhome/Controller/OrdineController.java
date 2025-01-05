@@ -25,11 +25,6 @@ public class OrdineController {
         return new ResponseEntity<>(ordineService.createOrder(ordine), HttpStatus.CREATED);
     }
 
-    @GetMapping("/utente/{utenteId}")
-    public List<Ordine> getOrdersByUser(@PathVariable Long utenteId) {
-        return ordineService.getOrdersByUser(utenteId);
-    }
-
     @PatchMapping("/{ordineId}/stato")
     public ResponseEntity<Ordine> updateOrderStatus(@PathVariable Long ordineId, @RequestBody StatoOrdine stato) {
         Ordine updatedOrder = ordineService.updateOrderStatus(ordineId, stato);

@@ -1,28 +1,36 @@
 package com.example.backend_shopfromhome.Model;
 
 import jakarta.persistence.*;
+import java.util.List;
 
 @Entity
+@Table(name = "categoria")
 public class Categoria {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    @Column(name = "ID_Categoria")
+    private Integer idCategoria;  // Modificato da Long a Integer
 
-    @Column(nullable = false)
+    @OneToMany(mappedBy = "categoria")
+    private List<Prodotto> prodotti;
+
+    @Column(name = "Nome", nullable = false)
     private String nome;
 
-    @Column
+    @Column(name = "Descrizione")
     private String descrizione;
 
-    // Getters e Setters
-    public Long getId() {
-        return id;
+    // Getter e Setter per id
+    public Integer getId() {
+        return idCategoria;
     }
 
-    public void setId(Long id) {
-        this.id = id;
+    public void setId(Integer id) {
+        this.idCategoria = id;
     }
 
+    // Getter e Setter per nome
     public String getNome() {
         return nome;
     }
@@ -31,6 +39,7 @@ public class Categoria {
         this.nome = nome;
     }
 
+    // Getter e Setter per descrizione
     public String getDescrizione() {
         return descrizione;
     }
