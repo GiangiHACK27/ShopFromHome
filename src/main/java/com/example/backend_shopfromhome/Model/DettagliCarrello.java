@@ -1,47 +1,41 @@
 package com.example.backend_shopfromhome.Model;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
+import java.math.BigDecimal;
 
 @Entity
 @Table(name = "dettagli_carrello")
-@IdClass(DettagliCarrelloId.class) // Usa una classe separata per la chiave primaria composta
 public class DettagliCarrello {
 
-    @Id
-    @Column(name = "id_carrello")
-    private Long idCarrello;
+    @EmbeddedId
+    private DettagliCarrelloId id;
 
-    @Id
-    @Column(name = "id_prodotto") // Assicurati che il nome della colonna sia corretto
-    private Long idProdotto;
-
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "id_carrello", insertable = false, updatable = false)
+    @ManyToOne
+    @MapsId("idCarrello")
+    @JoinColumn(name = "id_carrello", referencedColumnName = "id_carrello", nullable = false)
+    @JsonBackReference
     private Carrello carrello;
 
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "id_prodotto", insertable = false, updatable = false)
+    @ManyToOne
+    @MapsId("idProdotto")
+    @JoinColumn(name = "id_prodotto", referencedColumnName = "ID_Prodotto", nullable = false)
     private Prodotto prodotto;
 
     @Column(name = "quantita", nullable = false)
-    private int quantita;
+    private BigDecimal quantita;
 
-    // Getters e Setters
+    // Aggiungi un campo per l'ID del prodotto
+    @Transient // Questo campo non verrà salvato nel database
+    private Long prodottoId;
 
-    public Long getIdCarrello() {
-        return idCarrello;
+    // Getters and Setters
+    public DettagliCarrelloId getId() {
+        return id;
     }
 
-    public void setIdCarrello(Long idCarrello) {
-        this.idCarrello = idCarrello;
-    }
-
-    public Long getIdProdotto() {
-        return idProdotto;
-    }
-
-    public void setIdProdotto(Long idProdotto) {
-        this.idProdotto = idProdotto;
+    public void setId(DettagliCarrelloId id) {
+        this.id = id;
     }
 
     public Carrello getCarrello() {
@@ -58,13 +52,24 @@ public class DettagliCarrello {
 
     public void setProdotto(Prodotto prodotto) {
         this.prodotto = prodotto;
+        if (prodotto != null) {
+            this.prodottoId = prodotto.getId(); // Imposta l'ID del prodotto quando il prodotto è impostato
+        }
     }
 
-    public int getQuantita() {
+    public BigDecimal getQuantita() {
         return quantita;
     }
 
-    public void setQuantita(int quantita) {
+    public void setQuantita(BigDecimal quantita) {
         this.quantita = quantita;
+    }
+
+    public Long getProdottoId() {
+        return prodottoId;
+    }
+
+    public void setProdottoId(Long prodottoId) {
+        this.prodottoId = prodottoId;
     }
 }

@@ -1,9 +1,12 @@
 package com.example.backend_shopfromhome.Model;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 import lombok.*;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotNull;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -20,15 +23,20 @@ public class Utente {
     @Column(name = "id_utente")
     private Long id;
 
+    @NotNull(message = "Il nome è obbligatorio")
     @Column(name = "nome", nullable = false)
     private String nome;
 
+    @NotNull(message = "Il cognome è obbligatorio")
     @Column(name = "cognome", nullable = false)
     private String cognome;
 
+    @NotNull(message = "L'email è obbligatoria")
+    @Email(message = "Formato email non valido")
     @Column(name = "email", nullable = false, unique = true)
     private String email;
 
+    @NotNull(message = "La password è obbligatoria")
     @Column(name = "password", nullable = false)
     private String password;
 
@@ -36,22 +44,21 @@ public class Utente {
     @Column(name = "ruolo", nullable = false)
     private Ruolo ruolo;
 
+    // Modificato da @OneToMany a @OneToOne per avere un solo carrello
+    @OneToOne(mappedBy = "utente", cascade = CascadeType.ALL, orphanRemoval = true)
+    @JsonBackReference
+    private Carrello carrello;
+
     @OneToMany(mappedBy = "utente", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Ordine> ordini = new ArrayList<>();
 
-    @OneToMany(mappedBy = "utente", cascade = CascadeType.ALL, orphanRemoval = true)
-    private List<Carrello> carrelli = new ArrayList<>();
-
-    public void setPassword(String password) {
-        BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
-        this.password = encoder.encode(password);
-    }
-
+    // Metodo per verificare la password
     public boolean checkPassword(String rawPassword) {
         BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
         return encoder.matches(rawPassword, this.password);
     }
 
+    // Aggiungi e rimuovi ordini
     public void addOrdine(Ordine ordine) {
         ordine.setUtente(this);
         this.ordini.add(ordine);
@@ -62,13 +69,15 @@ public class Utente {
         this.ordini.remove(ordine);
     }
 
-    public void addCarrello(Carrello carrello) {
-        carrello.setUtente(this);
-        this.carrelli.add(carrello);
-    }
-
-    public void removeCarrello(Carrello carrello) {
-        carrello.setUtente(null);
-        this.carrelli.remove(carrello);
+    // Aggiungi e rimuovi carrello
+    public void setCarrello(Carrello carrello) {
+        // Se c'era un carrello precedente, lo rimuoviamo
+        if (this.carrello != null) {
+            this.carrello.setUtente(null);
+        }
+        this.carrello = carrello;
+        if (carrello != null) {
+            carrello.setUtente(this);
+        }
     }
 }

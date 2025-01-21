@@ -8,5 +8,5 @@ import java.util.List;
 
 @Repository
 public interface CarrelloRepository extends JpaRepository<Carrello, Long> {
-    List<Carrello> findByUtenteId(Long utenteId);
+    List<Carrello> findByIdUtente(Long idUtente);
 }

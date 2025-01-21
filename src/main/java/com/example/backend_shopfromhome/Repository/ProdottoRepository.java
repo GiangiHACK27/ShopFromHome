@@ -9,4 +9,7 @@ import java.util.List;
 @Repository
 public interface ProdottoRepository extends JpaRepository<Prodotto, Long> {
     List<Prodotto> findByCategoriaId(Long categoriaId);
+    List<Prodotto> findByNomeContaining(String query);
+    List<Prodotto> findByNomeContainingIgnoreCase(String nome);
 }
+

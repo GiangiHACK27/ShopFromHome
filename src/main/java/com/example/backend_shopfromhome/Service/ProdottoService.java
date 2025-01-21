@@ -41,4 +41,14 @@ public class ProdottoService {
     public void deleteProduct(Long id) {
         prodottoRepository.deleteById(id);
     }
+
+    // Aggiungi il metodo di ricerca
+    public List<Prodotto> searchProducts(String query) {
+        return prodottoRepository.findByNomeContainingIgnoreCase(query);
+    }
+
+    public Prodotto getProductById(Long id) {
+        return prodottoRepository.findById(id)
+                .orElseThrow(() -> new RuntimeException("Prodotto non trovato"));
+    }
 }

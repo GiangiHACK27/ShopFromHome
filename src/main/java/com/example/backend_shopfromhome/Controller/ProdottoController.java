@@ -27,12 +27,16 @@ public class ProdottoController {
         return prodottoService.getProductsByCategory(categoriaId);
     }
 
+    @GetMapping("/ricerca")
+    public List<Prodotto> searchProducts(@RequestParam String query) {
+        return prodottoService.searchProducts(query);
+    }
+
     @PostMapping
     public Prodotto createProduct(@RequestBody Prodotto prodotto) {
         System.out.println("Ricevuta richiesta per creare prodotto: " + prodotto.getNome()); // Aggiungi questo log
         return prodottoService.createProduct(prodotto);
     }
-
 
     @PutMapping("/{id}")
     public Prodotto updateProduct(@PathVariable Long id, @RequestBody Prodotto prodotto) {
@@ -43,4 +47,10 @@ public class ProdottoController {
     public void deleteProduct(@PathVariable Long id) {
         prodottoService.deleteProduct(id);
     }
+
+    @GetMapping("/{id}")
+    public Prodotto getProductById(@PathVariable Long id) {
+        return prodottoService.getProductById(id);
+    }
+
 }

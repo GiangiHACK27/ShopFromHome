@@ -4,7 +4,6 @@ import com.example.backend_shopfromhome.Model.Ruolo;
 import com.example.backend_shopfromhome.Model.Utente;
 import com.example.backend_shopfromhome.Repository.UtenteRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
@@ -23,30 +22,32 @@ public class UtenteService {
         this.passwordEncoder = passwordEncoder;
     }
 
-    // Metodo per creare un utente
     public Utente createUser(Utente utente) {
         if (utente.getPassword() == null || utente.getPassword().isEmpty()) {
             throw new IllegalArgumentException("La password è obbligatoria");
         }
 
-        // Cifrare la password prima di salvarla
+        // Verifica se l'email esiste già nel database
+        Optional<Utente> existingUser = utenteRepository.findByEmail(utente.getEmail());
+        if (existingUser.isPresent()) {
+            throw new IllegalArgumentException("L'email è già associata a un altro account.");
+        }
+
         String encryptedPassword = passwordEncoder.encode(utente.getPassword());
         utente.setPassword(encryptedPassword);
 
         return utenteRepository.save(utente);
     }
 
-    // Metodo per trovare un utente per email
+
     public Optional<Utente> findByEmail(String email) {
         return utenteRepository.findByEmail(email);
     }
 
-    // Metodo per eliminare un utente
     public void deleteUser(Long id) {
         utenteRepository.deleteById(id);
     }
 
-    // Metodo per ottenere utenti per ruolo
     public List<Utente> findByRuolo(Ruolo ruolo) {
         return utenteRepository.findByRuolo(ruolo);
     }
