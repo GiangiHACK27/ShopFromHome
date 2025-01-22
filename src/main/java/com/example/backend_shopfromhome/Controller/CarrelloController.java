@@ -6,7 +6,6 @@ import com.example.backend_shopfromhome.Model.DettagliCarrello;
 import com.example.backend_shopfromhome.Model.Prodotto;
 import com.example.backend_shopfromhome.Service.CarrelloService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.jpa.repository.support.SimpleJpaRepository;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -24,20 +23,20 @@ public class CarrelloController {
 
     @PostMapping("/{idCarrello}/aggiungi")
     public ResponseEntity<DettagliCarrello> aggiungiProdotto(@PathVariable Long idCarrello, @RequestBody DettagliCarrello dettagliCarrello) {
-        // Assicurati che il prodottoId sia presente
-        if (dettagliCarrello.getProdotto() == null) {
+        if (dettagliCarrello.getProdotto() == null || dettagliCarrello.getProdotto().getId() == null) {
             return ResponseEntity.badRequest().body(null); // Gestisci il caso in cui il prodotto è nullo
         }
 
-        // Recupera il prodotto dal database
+        if (idCarrello == null) {
+            return ResponseEntity.badRequest().body(null); // Errore: idCarrello mancante
+        }
+
         Prodotto prodotto = prodottoRepository.findById(dettagliCarrello.getProdotto().getId()).orElse(null);
         if (prodotto == null) {
             return ResponseEntity.badRequest().body(null); // Gestisci il caso in cui il prodotto non esiste
         }
 
-        // Imposta il prodotto nel dettagliCarrello
         dettagliCarrello.setProdotto(prodotto);
-
         DettagliCarrello nuovoDettaglio = carrelloService.aggiungiProdottoAlCarrello(idCarrello, dettagliCarrello);
         return ResponseEntity.ok(nuovoDettaglio);
     }
@@ -50,6 +49,9 @@ public class CarrelloController {
 
     @PutMapping("/{idCarrello}/aggiorna/{idProdotto}")
     public ResponseEntity<Void> aggiornaQuantita(@PathVariable Long idCarrello, @PathVariable Long idProdotto, @RequestParam BigDecimal nuovaQuantita) {
+        if (nuovaQuantita.compareTo(BigDecimal.ZERO) <= 0) {
+            return ResponseEntity.badRequest().build(); // Gestisci il caso in cui la quantità è non valida
+        }
         carrelloService.modificaQuantitaProdotto(idCarrello, idProdotto, nuovaQuantita);
         return ResponseEntity.noContent().build();
     }
