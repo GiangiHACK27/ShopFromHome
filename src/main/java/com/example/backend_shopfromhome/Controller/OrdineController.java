@@ -21,8 +21,18 @@ public class OrdineController {
     }
 
     @PostMapping
-    public ResponseEntity<Ordine> createOrder(@RequestBody Ordine ordine) {
-        return new ResponseEntity<>(ordineService.createOrder(ordine), HttpStatus.CREATED);
+    public ResponseEntity<Ordine> creaOrdine(@RequestBody Ordine ordine) {
+        // Non è più necessario calcolare il prezzo totale, viene preso direttamente dalla richiesta
+        ordine.getDettagliOrdine().forEach(dettaglio -> {
+            if (dettaglio.getProdottoId() == null) {
+                throw new RuntimeException("ID del prodotto mancante nel dettaglio ordine");
+            }
+            // Non calcolare il prezzo, lo si assume come già corretto dalla richiesta
+            // dettaglio.calcolaPrezzoTotale(); // Rimosso il calcolo del prezzo
+        });
+
+        Ordine ordineCreato = ordineService.salvaOrdine(ordine);
+        return ResponseEntity.ok(ordineCreato);
     }
 
     @PatchMapping("/{ordineId}/stato")
@@ -43,4 +53,3 @@ public class OrdineController {
         return ordineService.findByUtenteId(utenteId);
     }
 }
-

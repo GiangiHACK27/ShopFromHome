@@ -1,6 +1,10 @@
+// Modificato il modello DettaglioOrdine
 package com.example.backend_shopfromhome.Model;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.*;
+
 import java.math.BigDecimal;
 
 @Entity
@@ -9,20 +13,25 @@ public class DettaglioOrdine {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "ID_Dettaglio_Ordine")
+    @JsonProperty("id")
     private Long id;
 
     @ManyToOne
     @JoinColumn(name = "ID_Ordine")
+    @JsonBackReference
     private Ordine ordine;
 
-    @ManyToOne
-    @JoinColumn(name = "ID_Prodotto")
-    private Prodotto prodotto;
+    // Cambiato da Prodotto a prodottoId
+    @Column(name = "ID_Prodotto", nullable = false)
+    @JsonProperty("prodottoId")
+    private Long prodottoId;
 
     @Column(name = "Quantità", nullable = false)
+    @JsonProperty("quantita")
     private int quantita;
 
     @Column(name = "Prezzo_Totale", nullable = false)
+    @JsonProperty("prezzoTotale")
     private BigDecimal prezzoTotale;
 
     // Getter e Setter per id
@@ -43,13 +52,13 @@ public class DettaglioOrdine {
         this.ordine = ordine;
     }
 
-    // Getter e Setter per prodotto
-    public Prodotto getProdotto() {
-        return prodotto;
+    // Getter e Setter per prodottoId
+    public Long getProdottoId() {
+        return prodottoId;
     }
 
-    public void setProdotto(Prodotto prodotto) {
-        this.prodotto = prodotto;
+    public void setProdottoId(Long prodottoId) {
+        this.prodottoId = prodottoId;
     }
 
     // Getter e Setter per quantita
@@ -71,7 +80,7 @@ public class DettaglioOrdine {
     }
 
     // Metodo per calcolare il prezzo totale
-    public void calcolaPrezzoTotale() {
-        this.prezzoTotale = prodotto.getPrezzo().multiply(BigDecimal.valueOf(quantita));
+    public void calcolaPrezzoTotale(BigDecimal prezzoProdotto) {
+        this.prezzoTotale = prezzoProdotto.multiply(BigDecimal.valueOf(quantita));
     }
 }

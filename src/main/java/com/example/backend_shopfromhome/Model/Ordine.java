@@ -1,6 +1,15 @@
 package com.example.backend_shopfromhome.Model;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+import com.fasterxml.jackson.datatype.jsr310.deser.LocalDateTimeDeserializer;
+import com.fasterxml.jackson.datatype.jsr310.ser.LocalDateTimeSerializer;
 import jakarta.persistence.*;
+import org.springframework.format.annotation.DateTimeFormat;
+
 import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -9,9 +18,11 @@ import java.util.List;
 @Entity
 @Table(name = "ordine")
 public class Ordine {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "ID_Ordine")
+    @JsonBackReference
     private Long id;
 
     @ManyToOne
@@ -19,7 +30,10 @@ public class Ordine {
     private Utente utente;
 
     @Column(name = "Data_Ritiro", nullable = false)
-    private LocalDate dataRitiro;
+    @JsonFormat(pattern = "yyyy-MM-dd'T'HH:mm:ss") // Usato per il formato
+    @JsonDeserialize(using = LocalDateTimeDeserializer.class)  // Aggiungi deserializzatore
+    @JsonSerialize(using = LocalDateTimeSerializer.class)  // Aggiungi serializzatore
+    private LocalDateTime dataRitiro;
 
     @Column(name = "Totale_Prezzo", nullable = false)
     private BigDecimal totalePrezzo;
@@ -29,10 +43,11 @@ public class Ordine {
     private StatoOrdine stato;
 
     @OneToMany(mappedBy = "ordine")
+    @JsonManagedReference
     private List<DettaglioOrdine> dettagliOrdine;
 
     @Column(name = "Data_Ordine")
-    private LocalDateTime dataOrdine; // Aggiunto per mappare il campo data_ordine nel database
+    private LocalDateTime dataOrdine;
 
     // Getter e Setter per id
     public Long getId() {
@@ -53,11 +68,11 @@ public class Ordine {
     }
 
     // Getter e Setter per dataRitiro
-    public LocalDate getDataRitiro() {
+    public LocalDateTime getDataRitiro() {
         return dataRitiro;
     }
 
-    public void setDataRitiro(LocalDate dataRitiro) {
+    public void setDataRitiro(LocalDateTime dataRitiro) {
         this.dataRitiro = dataRitiro;
     }
 
