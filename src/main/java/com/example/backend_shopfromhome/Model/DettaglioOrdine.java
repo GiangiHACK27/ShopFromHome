@@ -1,7 +1,7 @@
-// Modificato il modello DettaglioOrdine
 package com.example.backend_shopfromhome.Model;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.*;
 
@@ -10,6 +10,7 @@ import java.math.BigDecimal;
 @Entity
 @Table(name = "dettaglio_ordine")
 public class DettaglioOrdine {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "ID_Dettaglio_Ordine")
@@ -19,9 +20,9 @@ public class DettaglioOrdine {
     @ManyToOne
     @JoinColumn(name = "ID_Ordine")
     @JsonBackReference
+    @JsonIgnoreProperties("dettagliOrdine")  // Aggiungi questa linea per evitare il ciclo di serializzazione
     private Ordine ordine;
 
-    // Cambiato da Prodotto a prodottoId
     @Column(name = "ID_Prodotto", nullable = false)
     @JsonProperty("prodottoId")
     private Long prodottoId;
@@ -84,3 +85,5 @@ public class DettaglioOrdine {
         this.prezzoTotale = prezzoProdotto.multiply(BigDecimal.valueOf(quantita));
     }
 }
+
+

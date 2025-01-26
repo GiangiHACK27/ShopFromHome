@@ -1,6 +1,7 @@
 package com.example.backend_shopfromhome.Model;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
@@ -30,9 +31,9 @@ public class Ordine {
     private Utente utente;
 
     @Column(name = "Data_Ritiro", nullable = false)
-    @JsonFormat(pattern = "yyyy-MM-dd'T'HH:mm:ss") // Usato per il formato
-    @JsonDeserialize(using = LocalDateTimeDeserializer.class)  // Aggiungi deserializzatore
-    @JsonSerialize(using = LocalDateTimeSerializer.class)  // Aggiungi serializzatore
+    @JsonFormat(pattern = "yyyy-MM-dd'T'HH:mm:ss")
+    @JsonDeserialize(using = LocalDateTimeDeserializer.class)
+    @JsonSerialize(using = LocalDateTimeSerializer.class)
     private LocalDateTime dataRitiro;
 
     @Column(name = "Totale_Prezzo", nullable = false)
@@ -44,6 +45,7 @@ public class Ordine {
 
     @OneToMany(mappedBy = "ordine")
     @JsonManagedReference
+    @JsonIgnoreProperties("ordine")  // Ignoriamo la serializzazione del campo 'ordine' in 'DettaglioOrdine'
     private List<DettaglioOrdine> dettagliOrdine;
 
     @Column(name = "Data_Ordine")
@@ -112,3 +114,5 @@ public class Ordine {
         this.dataOrdine = dataOrdine;
     }
 }
+
+
