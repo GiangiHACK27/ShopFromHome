@@ -13,7 +13,7 @@ public class WebConfig implements WebMvcConfigurer {
     public void addCorsMappings(CorsRegistry registry) {
         // Consenti richieste da ogni origine
         registry.addMapping("/**") // Applica a tutte le rotte
-                .allowedOrigins("http://localhost:3000", "com.example.shopfromhome") // Sostituisci con il dominio del tuo frontend
+                .allowedOrigins("http://localhost:3000", "http://192.168.56.1:8080", "com.example.shopfromhome") // Sostituisci con il dominio del tuo frontend
                 .allowedMethods("GET", "POST", "PUT", "DELETE") // I metodi consentiti
                 .allowedHeaders("*") // Tutti gli header sono consentiti
                 .allowCredentials(true); // Se hai bisogno di inviare cookie

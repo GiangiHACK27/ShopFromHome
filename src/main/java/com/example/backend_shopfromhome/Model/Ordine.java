@@ -23,7 +23,6 @@ public class Ordine {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "ID_Ordine")
-    @JsonBackReference
     private Long id;
 
     @ManyToOne
