@@ -1,0 +1,893 @@
+2025-01-30T00:03:26.025+01:00  INFO 5460 --- [Backend_ShopFromHome] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2025-01-30T00:03:26.037+01:00  INFO 5460 --- [Backend_ShopFromHome] [Thread-15] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-30T00:03:26.103+01:00  INFO 5460 --- [Backend_ShopFromHome] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-01-30T00:03:26.107+01:00  INFO 5460 --- [Backend_ShopFromHome] [Thread-15] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-30T00:03:26.111+01:00  INFO 5460 --- [Backend_ShopFromHome] [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2025-01-30T00:03:26.112+01:00  INFO 5460 --- [Backend_ShopFromHome] [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2025-01-30T00:03:26.246+01:00  INFO 5460 --- [Backend_ShopFromHome] [restartedMain] c.e.b.BackendShopFromHomeApplication     : Starting BackendShopFromHomeApplication using Java 17.0.13 with PID 5460 (C:\Users\gianl\Desktop\uni\terzo anno\primo semestre\Ingegneria del software\progetto\backend\target\classes started by gianl in C:\Users\gianl\Desktop\uni\terzo anno\primo semestre\Ingegneria del software\progetto\backend)
+2025-01-30T00:03:26.246+01:00  INFO 5460 --- [Backend_ShopFromHome] [restartedMain] c.e.b.BackendShopFromHomeApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-01-30T00:03:26.913+01:00  INFO 5460 --- [Backend_ShopFromHome] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-30T00:03:26.914+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Scanning for JPA repositories in packages com.example.backend_shopfromhome.
+2025-01-30T00:03:26.916+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] o.s.d.r.c.RepositoryComponentProvider    : Identified candidate component class: file [C:\Users\gianl\Desktop\uni\terzo anno\primo semestre\Ingegneria del software\progetto\backend\target\classes\com\example\backend_shopfromhome\Repository\CarrelloRepository.class]
+2025-01-30T00:03:26.916+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] o.s.d.r.c.RepositoryComponentProvider    : Identified candidate component class: file [C:\Users\gianl\Desktop\uni\terzo anno\primo semestre\Ingegneria del software\progetto\backend\target\classes\com\example\backend_shopfromhome\Repository\CategoriaRepository.class]
+2025-01-30T00:03:26.916+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] o.s.d.r.c.RepositoryComponentProvider    : Identified candidate component class: file [C:\Users\gianl\Desktop\uni\terzo anno\primo semestre\Ingegneria del software\progetto\backend\target\classes\com\example\backend_shopfromhome\Repository\DettagliCarrelloRepository.class]
+2025-01-30T00:03:26.917+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] o.s.d.r.c.RepositoryComponentProvider    : Identified candidate component class: file [C:\Users\gianl\Desktop\uni\terzo anno\primo semestre\Ingegneria del software\progetto\backend\target\classes\com\example\backend_shopfromhome\Repository\DettaglioOrdineRepository.class]
+2025-01-30T00:03:26.917+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] o.s.d.r.c.RepositoryComponentProvider    : Identified candidate component class: file [C:\Users\gianl\Desktop\uni\terzo anno\primo semestre\Ingegneria del software\progetto\backend\target\classes\com\example\backend_shopfromhome\Repository\OrdineRepository.class]
+2025-01-30T00:03:26.917+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] o.s.d.r.c.RepositoryComponentProvider    : Identified candidate component class: file [C:\Users\gianl\Desktop\uni\terzo anno\primo semestre\Ingegneria del software\progetto\backend\target\classes\com\example\backend_shopfromhome\Repository\ProdottoRepository.class]
+2025-01-30T00:03:26.917+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] o.s.d.r.c.RepositoryComponentProvider    : Identified candidate component class: file [C:\Users\gianl\Desktop\uni\terzo anno\primo semestre\Ingegneria del software\progetto\backend\target\classes\com\example\backend_shopfromhome\Repository\UtenteRepository.class]
+2025-01-30T00:03:26.925+01:00  INFO 5460 --- [Backend_ShopFromHome] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 7 JPA repository interfaces.
+2025-01-30T00:03:26.983+01:00  INFO 5460 --- [Backend_ShopFromHome] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-01-30T00:03:26.983+01:00  INFO 5460 --- [Backend_ShopFromHome] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-01-30T00:03:26.983+01:00  INFO 5460 --- [Backend_ShopFromHome] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-30T00:03:26.998+01:00  INFO 5460 --- [Backend_ShopFromHome] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-01-30T00:03:26.999+01:00  INFO 5460 --- [Backend_ShopFromHome] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 752 ms
+2025-01-30T00:03:27.025+01:00  INFO 5460 --- [Backend_ShopFromHome] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-30T00:03:27.026+01:00  INFO 5460 --- [Backend_ShopFromHome] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-01-30T00:03:27.033+01:00  INFO 5460 --- [Backend_ShopFromHome] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-30T00:03:27.033+01:00  INFO 5460 --- [Backend_ShopFromHome] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2025-01-30T00:03:27.047+01:00  INFO 5460 --- [Backend_ShopFromHome] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-5 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5c1d7e86
+2025-01-30T00:03:27.047+01:00  INFO 5460 --- [Backend_ShopFromHome] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2025-01-30T00:03:27.047+01:00  WARN 5460 --- [Backend_ShopFromHome] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-30T00:03:27.047+01:00  WARN 5460 --- [Backend_ShopFromHome] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-01-30T00:03:27.047+01:00  INFO 5460 --- [Backend_ShopFromHome] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-5)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-01-30T00:03:27.048+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(12, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@73d5b5e) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@436ba86e)
+2025-01-30T00:03:27.048+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-9, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@3105f4b6) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@5dc3c1ab)
+2025-01-30T00:03:27.048+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-3, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@30c986e6) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@2e7f6049)
+2025-01-30T00:03:27.048+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4003, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@30c18174) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@734cd05e)
+2025-01-30T00:03:27.048+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4001, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@f4e9667) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@5ae6d2ef)
+2025-01-30T00:03:27.048+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4002, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@661032e6) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@73cbd05a)
+2025-01-30T00:03:27.048+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2004, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@8cd8dea) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@64d047b6)
+2025-01-30T00:03:27.048+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2005, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@3b0dec8) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@2ed497e4)
+2025-01-30T00:03:27.048+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2011, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@4a92ed09) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@2c19ee1a)
+2025-01-30T00:03:27.099+01:00  INFO 5460 --- [Backend_ShopFromHome] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-30T00:03:27.123+01:00  INFO 5460 --- [Backend_ShopFromHome] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-30T00:03:27.138+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] .c.JpaMetamodelMappingContextFactoryBean : Initializing JpaMetamodelMappingContext…
+2025-01-30T00:03:27.140+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] .c.JpaMetamodelMappingContextFactoryBean : Finished initializing JpaMetamodelMappingContext
+2025-01-30T00:03:27.150+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Initializing repository instance for com.example.backend_shopfromhome.Repository.CarrelloRepository…
+2025-01-30T00:03:27.152+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] o.s.d.jpa.repository.query.NamedQuery    : Looking up named query 'Carrello.findByIdUtente'
+2025-01-30T00:03:27.153+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] o.s.d.jpa.repository.query.NamedQuery    : Did not find named query Carrello.findByIdUtente
+2025-01-30T00:03:27.157+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Finished creation of repository instance for com.example.backend_shopfromhome.Repository.CarrelloRepository.
+2025-01-30T00:03:27.159+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Initializing repository instance for com.example.backend_shopfromhome.Repository.DettagliCarrelloRepository…
+2025-01-30T00:03:27.160+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] o.s.d.jpa.repository.query.NamedQuery    : Looking up named query 'DettagliCarrello.findById_IdCarrello'
+2025-01-30T00:03:27.160+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] o.s.d.jpa.repository.query.NamedQuery    : Did not find named query DettagliCarrello.findById_IdCarrello
+2025-01-30T00:03:27.162+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Finished creation of repository instance for com.example.backend_shopfromhome.Repository.DettagliCarrelloRepository.
+2025-01-30T00:03:27.164+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Initializing repository instance for com.example.backend_shopfromhome.Repository.ProdottoRepository…
+2025-01-30T00:03:27.165+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] o.s.d.jpa.repository.query.NamedQuery    : Looking up named query 'Prodotto.findByNomeContainingIgnoreCase'
+2025-01-30T00:03:27.165+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] o.s.d.jpa.repository.query.NamedQuery    : Did not find named query Prodotto.findByNomeContainingIgnoreCase
+2025-01-30T00:03:27.166+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] o.s.d.jpa.repository.query.NamedQuery    : Looking up named query 'Prodotto.findByCategoriaId'
+2025-01-30T00:03:27.166+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] o.s.d.jpa.repository.query.NamedQuery    : Did not find named query Prodotto.findByCategoriaId
+2025-01-30T00:03:27.167+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] o.s.d.jpa.repository.query.NamedQuery    : Looking up named query 'Prodotto.findByNomeContaining'
+2025-01-30T00:03:27.167+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] o.s.d.jpa.repository.query.NamedQuery    : Did not find named query Prodotto.findByNomeContaining
+2025-01-30T00:03:27.168+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Finished creation of repository instance for com.example.backend_shopfromhome.Repository.ProdottoRepository.
+2025-01-30T00:03:27.172+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Initializing repository instance for com.example.backend_shopfromhome.Repository.CategoriaRepository…
+2025-01-30T00:03:27.174+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Finished creation of repository instance for com.example.backend_shopfromhome.Repository.CategoriaRepository.
+2025-01-30T00:03:27.175+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Initializing repository instance for com.example.backend_shopfromhome.Repository.DettaglioOrdineRepository…
+2025-01-30T00:03:27.177+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Finished creation of repository instance for com.example.backend_shopfromhome.Repository.DettaglioOrdineRepository.
+2025-01-30T00:03:27.180+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Initializing repository instance for com.example.backend_shopfromhome.Repository.OrdineRepository…
+2025-01-30T00:03:27.181+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] o.s.d.jpa.repository.query.NamedQuery    : Looking up named query 'Ordine.findByUtenteId'
+2025-01-30T00:03:27.181+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] o.s.d.jpa.repository.query.NamedQuery    : Did not find named query Ordine.findByUtenteId
+2025-01-30T00:03:27.182+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] o.s.d.jpa.repository.query.NamedQuery    : Looking up named query 'Ordine.findByStato'
+2025-01-30T00:03:27.182+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] o.s.d.jpa.repository.query.NamedQuery    : Did not find named query Ordine.findByStato
+2025-01-30T00:03:27.185+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Finished creation of repository instance for com.example.backend_shopfromhome.Repository.OrdineRepository.
+2025-01-30T00:03:27.186+01:00  WARN 5460 --- [Backend_ShopFromHome] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'prodottoController': Resolution of declared constructors on bean Class [com.example.backend_shopfromhome.Controller.ProdottoController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@3af4e629] failed
+2025-01-30T00:03:27.186+01:00  INFO 5460 --- [Backend_ShopFromHome] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-30T00:03:27.186+01:00  INFO 5460 --- [Backend_ShopFromHome] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2025-01-30T00:03:27.195+01:00  INFO 5460 --- [Backend_ShopFromHome] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+2025-01-30T00:03:27.196+01:00  INFO 5460 --- [Backend_ShopFromHome] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-01-30T00:03:27.201+01:00  INFO 5460 --- [Backend_ShopFromHome] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-01-30T00:03:27.219+01:00 ERROR 5460 --- [Backend_ShopFromHome] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'prodottoController': Resolution of declared constructors on bean Class [com.example.backend_shopfromhome.Controller.ProdottoController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@3af4e629] failed
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:384) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1316) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1211) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:289) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1122) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1093) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1030) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987) ~[spring-context-6.2.1.jar:6.2.1]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.1.jar:6.2.1]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.4.1.jar:3.4.1]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.4.1.jar:3.4.1]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.4.1.jar:3.4.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.4.1.jar:3.4.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.4.1.jar:3.4.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.4.1.jar:3.4.1]
+	at com.example.backend_shopfromhome.BackendShopFromHomeApplication.main(BackendShopFromHomeApplication.java:12) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.4.1.jar:3.4.1]
+Caused by: java.lang.NoClassDefFoundError: com/example/backend_shopfromhome/Service/ProdottoService
+	at java.base/java.lang.Class.getDeclaredConstructors0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.privateGetDeclaredConstructors(Class.java:3373) ~[na:na]
+	at java.base/java.lang.Class.getDeclaredConstructors(Class.java:2555) ~[na:na]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:379) ~[spring-beans-6.2.1.jar:6.2.1]
+	... 25 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.example.backend_shopfromhome.Service.ProdottoService
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525) ~[na:na]
+	at java.base/java.lang.Class.forName0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:467) ~[na:na]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:121) ~[spring-boot-devtools-3.4.1.jar:3.4.1]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525) ~[na:na]
+	... 29 common frames omitted
+
+2025-01-30T00:04:04.335+01:00  INFO 5460 --- [Backend_ShopFromHome] [restartedMain] c.e.b.BackendShopFromHomeApplication     : Starting BackendShopFromHomeApplication using Java 17.0.13 with PID 5460 (C:\Users\gianl\Desktop\uni\terzo anno\primo semestre\Ingegneria del software\progetto\backend\target\classes started by gianl in C:\Users\gianl\Desktop\uni\terzo anno\primo semestre\Ingegneria del software\progetto\backend)
+2025-01-30T00:04:04.335+01:00  INFO 5460 --- [Backend_ShopFromHome] [restartedMain] c.e.b.BackendShopFromHomeApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-01-30T00:04:04.584+01:00  INFO 5460 --- [Backend_ShopFromHome] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-30T00:04:04.584+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Scanning for JPA repositories in packages com.example.backend_shopfromhome.
+2025-01-30T00:04:04.589+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] o.s.d.r.c.RepositoryComponentProvider    : Identified candidate component class: file [C:\Users\gianl\Desktop\uni\terzo anno\primo semestre\Ingegneria del software\progetto\backend\target\classes\com\example\backend_shopfromhome\Repository\CarrelloRepository.class]
+2025-01-30T00:04:04.589+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] o.s.d.r.c.RepositoryComponentProvider    : Identified candidate component class: file [C:\Users\gianl\Desktop\uni\terzo anno\primo semestre\Ingegneria del software\progetto\backend\target\classes\com\example\backend_shopfromhome\Repository\CategoriaRepository.class]
+2025-01-30T00:04:04.589+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] o.s.d.r.c.RepositoryComponentProvider    : Identified candidate component class: file [C:\Users\gianl\Desktop\uni\terzo anno\primo semestre\Ingegneria del software\progetto\backend\target\classes\com\example\backend_shopfromhome\Repository\DettagliCarrelloRepository.class]
+2025-01-30T00:04:04.589+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] o.s.d.r.c.RepositoryComponentProvider    : Identified candidate component class: file [C:\Users\gianl\Desktop\uni\terzo anno\primo semestre\Ingegneria del software\progetto\backend\target\classes\com\example\backend_shopfromhome\Repository\DettaglioOrdineRepository.class]
+2025-01-30T00:04:04.589+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] o.s.d.r.c.RepositoryComponentProvider    : Identified candidate component class: file [C:\Users\gianl\Desktop\uni\terzo anno\primo semestre\Ingegneria del software\progetto\backend\target\classes\com\example\backend_shopfromhome\Repository\ProdottoRepository.class]
+2025-01-30T00:04:04.589+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] o.s.d.r.c.RepositoryComponentProvider    : Identified candidate component class: file [C:\Users\gianl\Desktop\uni\terzo anno\primo semestre\Ingegneria del software\progetto\backend\target\classes\com\example\backend_shopfromhome\Repository\UtenteRepository.class]
+2025-01-30T00:04:04.604+01:00  INFO 5460 --- [Backend_ShopFromHome] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18 ms. Found 6 JPA repository interfaces.
+2025-01-30T00:04:04.671+01:00  INFO 5460 --- [Backend_ShopFromHome] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-01-30T00:04:04.672+01:00  INFO 5460 --- [Backend_ShopFromHome] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-01-30T00:04:04.672+01:00  INFO 5460 --- [Backend_ShopFromHome] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-30T00:04:04.682+01:00  INFO 5460 --- [Backend_ShopFromHome] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2025-01-30T00:04:04.682+01:00  INFO 5460 --- [Backend_ShopFromHome] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 346 ms
+2025-01-30T00:04:04.720+01:00  INFO 5460 --- [Backend_ShopFromHome] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-30T00:04:04.724+01:00  INFO 5460 --- [Backend_ShopFromHome] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-01-30T00:04:04.746+01:00  INFO 5460 --- [Backend_ShopFromHome] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-30T00:04:04.747+01:00  INFO 5460 --- [Backend_ShopFromHome] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...
+2025-01-30T00:04:04.759+01:00  INFO 5460 --- [Backend_ShopFromHome] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-6 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7434aeb8
+2025-01-30T00:04:04.759+01:00  INFO 5460 --- [Backend_ShopFromHome] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Start completed.
+2025-01-30T00:04:04.760+01:00  WARN 5460 --- [Backend_ShopFromHome] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-30T00:04:04.760+01:00  WARN 5460 --- [Backend_ShopFromHome] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-01-30T00:04:04.761+01:00  INFO 5460 --- [Backend_ShopFromHome] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-6)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-01-30T00:04:04.761+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(12, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@356bffe3) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@51f08047)
+2025-01-30T00:04:04.761+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-9, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@755869db) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@24c858a6)
+2025-01-30T00:04:04.762+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-3, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@4eb62f3b) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@1b117c12)
+2025-01-30T00:04:04.762+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4003, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@2d31c81a) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@4b5ab872)
+2025-01-30T00:04:04.762+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4001, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@34ea99d5) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@240b92b6)
+2025-01-30T00:04:04.762+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4002, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@759ef35) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@19de4e84)
+2025-01-30T00:04:04.762+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2004, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@791a485b) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@17cfbec)
+2025-01-30T00:04:04.762+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2005, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@49148cb1) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@22d55179)
+2025-01-30T00:04:04.762+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2011, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@9268de8) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@6fe3b4bb)
+2025-01-30T00:04:04.860+01:00  INFO 5460 --- [Backend_ShopFromHome] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-30T00:04:04.890+01:00  INFO 5460 --- [Backend_ShopFromHome] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-30T00:04:04.909+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] .c.JpaMetamodelMappingContextFactoryBean : Initializing JpaMetamodelMappingContext…
+2025-01-30T00:04:04.909+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] .c.JpaMetamodelMappingContextFactoryBean : Finished initializing JpaMetamodelMappingContext
+2025-01-30T00:04:04.919+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Initializing repository instance for com.example.backend_shopfromhome.Repository.CarrelloRepository…
+2025-01-30T00:04:04.921+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] o.s.d.jpa.repository.query.NamedQuery    : Looking up named query 'Carrello.findByIdUtente'
+2025-01-30T00:04:04.921+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] o.s.d.jpa.repository.query.NamedQuery    : Did not find named query Carrello.findByIdUtente
+2025-01-30T00:04:04.923+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Finished creation of repository instance for com.example.backend_shopfromhome.Repository.CarrelloRepository.
+2025-01-30T00:04:04.926+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Initializing repository instance for com.example.backend_shopfromhome.Repository.DettagliCarrelloRepository…
+2025-01-30T00:04:04.927+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] o.s.d.jpa.repository.query.NamedQuery    : Looking up named query 'DettagliCarrello.findById_IdCarrello'
+2025-01-30T00:04:04.927+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] o.s.d.jpa.repository.query.NamedQuery    : Did not find named query DettagliCarrello.findById_IdCarrello
+2025-01-30T00:04:04.930+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Finished creation of repository instance for com.example.backend_shopfromhome.Repository.DettagliCarrelloRepository.
+2025-01-30T00:04:04.932+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Initializing repository instance for com.example.backend_shopfromhome.Repository.ProdottoRepository…
+2025-01-30T00:04:04.932+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] o.s.d.jpa.repository.query.NamedQuery    : Looking up named query 'Prodotto.findByNomeContainingIgnoreCase'
+2025-01-30T00:04:04.932+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] o.s.d.jpa.repository.query.NamedQuery    : Did not find named query Prodotto.findByNomeContainingIgnoreCase
+2025-01-30T00:04:04.934+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] o.s.d.jpa.repository.query.NamedQuery    : Looking up named query 'Prodotto.findByCategoriaId'
+2025-01-30T00:04:04.935+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] o.s.d.jpa.repository.query.NamedQuery    : Did not find named query Prodotto.findByCategoriaId
+2025-01-30T00:04:04.935+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] o.s.d.jpa.repository.query.NamedQuery    : Looking up named query 'Prodotto.findByNomeContaining'
+2025-01-30T00:04:04.936+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] o.s.d.jpa.repository.query.NamedQuery    : Did not find named query Prodotto.findByNomeContaining
+2025-01-30T00:04:04.939+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Finished creation of repository instance for com.example.backend_shopfromhome.Repository.ProdottoRepository.
+2025-01-30T00:04:04.943+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Initializing repository instance for com.example.backend_shopfromhome.Repository.CategoriaRepository…
+2025-01-30T00:04:04.945+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Finished creation of repository instance for com.example.backend_shopfromhome.Repository.CategoriaRepository.
+2025-01-30T00:04:04.947+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Initializing repository instance for com.example.backend_shopfromhome.Repository.DettaglioOrdineRepository…
+2025-01-30T00:04:04.949+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Finished creation of repository instance for com.example.backend_shopfromhome.Repository.DettaglioOrdineRepository.
+2025-01-30T00:04:04.951+01:00  WARN 5460 --- [Backend_ShopFromHome] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'ordineController' defined in file [C:\Users\gianl\Desktop\uni\terzo anno\primo semestre\Ingegneria del software\progetto\backend\target\classes\com\example\backend_shopfromhome\Controller\OrdineController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'ordineService': Resolution of declared constructors on bean Class [com.example.backend_shopfromhome.Service.OrdineService] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@3c02b83f] failed
+2025-01-30T00:04:04.951+01:00  INFO 5460 --- [Backend_ShopFromHome] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-30T00:04:04.951+01:00  INFO 5460 --- [Backend_ShopFromHome] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown initiated...
+2025-01-30T00:04:04.955+01:00  INFO 5460 --- [Backend_ShopFromHome] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown completed.
+2025-01-30T00:04:04.956+01:00  INFO 5460 --- [Backend_ShopFromHome] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-01-30T00:04:04.959+01:00  INFO 5460 --- [Backend_ShopFromHome] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-01-30T00:04:04.961+01:00 ERROR 5460 --- [Backend_ShopFromHome] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'ordineController' defined in file [C:\Users\gianl\Desktop\uni\terzo anno\primo semestre\Ingegneria del software\progetto\backend\target\classes\com\example\backend_shopfromhome\Controller\OrdineController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'ordineService': Resolution of declared constructors on bean Class [com.example.backend_shopfromhome.Service.OrdineService] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@3c02b83f] failed
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1377) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1214) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:289) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1122) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1093) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1030) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987) ~[spring-context-6.2.1.jar:6.2.1]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.1.jar:6.2.1]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.4.1.jar:3.4.1]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.4.1.jar:3.4.1]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.4.1.jar:3.4.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.4.1.jar:3.4.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.4.1.jar:3.4.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.4.1.jar:3.4.1]
+	at com.example.backend_shopfromhome.BackendShopFromHomeApplication.main(BackendShopFromHomeApplication.java:12) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.4.1.jar:3.4.1]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'ordineService': Resolution of declared constructors on bean Class [com.example.backend_shopfromhome.Service.OrdineService] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@3c02b83f] failed
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:384) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1316) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1211) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:289) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1573) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1519) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-6.2.1.jar:6.2.1]
+	... 26 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: com/example/backend_shopfromhome/Repository/OrdineRepository
+	at java.base/java.lang.Class.getDeclaredConstructors0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.privateGetDeclaredConstructors(Class.java:3373) ~[na:na]
+	at java.base/java.lang.Class.getDeclaredConstructors(Class.java:2555) ~[na:na]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:379) ~[spring-beans-6.2.1.jar:6.2.1]
+	... 38 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.example.backend_shopfromhome.Repository.OrdineRepository
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525) ~[na:na]
+	at java.base/java.lang.Class.forName0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:467) ~[na:na]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:121) ~[spring-boot-devtools-3.4.1.jar:3.4.1]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525) ~[na:na]
+	... 42 common frames omitted
+
+2025-01-30T00:04:26.861+01:00  INFO 5460 --- [Backend_ShopFromHome] [restartedMain] c.e.b.BackendShopFromHomeApplication     : Starting BackendShopFromHomeApplication using Java 17.0.13 with PID 5460 (C:\Users\gianl\Desktop\uni\terzo anno\primo semestre\Ingegneria del software\progetto\backend\target\classes started by gianl in C:\Users\gianl\Desktop\uni\terzo anno\primo semestre\Ingegneria del software\progetto\backend)
+2025-01-30T00:04:26.861+01:00  INFO 5460 --- [Backend_ShopFromHome] [restartedMain] c.e.b.BackendShopFromHomeApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-01-30T00:04:27.011+01:00  INFO 5460 --- [Backend_ShopFromHome] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-30T00:04:27.011+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Scanning for JPA repositories in packages com.example.backend_shopfromhome.
+2025-01-30T00:04:27.013+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] o.s.d.r.c.RepositoryComponentProvider    : Identified candidate component class: file [C:\Users\gianl\Desktop\uni\terzo anno\primo semestre\Ingegneria del software\progetto\backend\target\classes\com\example\backend_shopfromhome\Repository\CarrelloRepository.class]
+2025-01-30T00:04:27.013+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] o.s.d.r.c.RepositoryComponentProvider    : Identified candidate component class: file [C:\Users\gianl\Desktop\uni\terzo anno\primo semestre\Ingegneria del software\progetto\backend\target\classes\com\example\backend_shopfromhome\Repository\CategoriaRepository.class]
+2025-01-30T00:04:27.013+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] o.s.d.r.c.RepositoryComponentProvider    : Identified candidate component class: file [C:\Users\gianl\Desktop\uni\terzo anno\primo semestre\Ingegneria del software\progetto\backend\target\classes\com\example\backend_shopfromhome\Repository\DettagliCarrelloRepository.class]
+2025-01-30T00:04:27.013+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] o.s.d.r.c.RepositoryComponentProvider    : Identified candidate component class: file [C:\Users\gianl\Desktop\uni\terzo anno\primo semestre\Ingegneria del software\progetto\backend\target\classes\com\example\backend_shopfromhome\Repository\DettaglioOrdineRepository.class]
+2025-01-30T00:04:27.013+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] o.s.d.r.c.RepositoryComponentProvider    : Identified candidate component class: file [C:\Users\gianl\Desktop\uni\terzo anno\primo semestre\Ingegneria del software\progetto\backend\target\classes\com\example\backend_shopfromhome\Repository\ProdottoRepository.class]
+2025-01-30T00:04:27.013+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] o.s.d.r.c.RepositoryComponentProvider    : Identified candidate component class: file [C:\Users\gianl\Desktop\uni\terzo anno\primo semestre\Ingegneria del software\progetto\backend\target\classes\com\example\backend_shopfromhome\Repository\UtenteRepository.class]
+2025-01-30T00:04:27.028+01:00  INFO 5460 --- [Backend_ShopFromHome] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16 ms. Found 6 JPA repository interfaces.
+2025-01-30T00:04:27.091+01:00  INFO 5460 --- [Backend_ShopFromHome] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-01-30T00:04:27.092+01:00  INFO 5460 --- [Backend_ShopFromHome] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-01-30T00:04:27.092+01:00  INFO 5460 --- [Backend_ShopFromHome] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-30T00:04:27.103+01:00  INFO 5460 --- [Backend_ShopFromHome] [restartedMain] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2025-01-30T00:04:27.103+01:00  INFO 5460 --- [Backend_ShopFromHome] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 241 ms
+2025-01-30T00:04:27.122+01:00  INFO 5460 --- [Backend_ShopFromHome] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-30T00:04:27.123+01:00  INFO 5460 --- [Backend_ShopFromHome] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-01-30T00:04:27.127+01:00  INFO 5460 --- [Backend_ShopFromHome] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-30T00:04:27.128+01:00  INFO 5460 --- [Backend_ShopFromHome] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Starting...
+2025-01-30T00:04:27.136+01:00  INFO 5460 --- [Backend_ShopFromHome] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-7 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3a42cbb5
+2025-01-30T00:04:27.136+01:00  INFO 5460 --- [Backend_ShopFromHome] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Start completed.
+2025-01-30T00:04:27.136+01:00  WARN 5460 --- [Backend_ShopFromHome] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-30T00:04:27.136+01:00  WARN 5460 --- [Backend_ShopFromHome] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-01-30T00:04:27.137+01:00  INFO 5460 --- [Backend_ShopFromHome] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-7)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-01-30T00:04:27.137+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(12, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@5eb7fcd2) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@1476d045)
+2025-01-30T00:04:27.137+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-9, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@775d631b) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@5b6e0126)
+2025-01-30T00:04:27.137+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-3, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@3ade27f5) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@18082c13)
+2025-01-30T00:04:27.137+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4003, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@451d1b2) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@2f9d872f)
+2025-01-30T00:04:27.137+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4001, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@64b7fca6) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@3d862c97)
+2025-01-30T00:04:27.137+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4002, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@37d0b6d4) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@7437fbfe)
+2025-01-30T00:04:27.137+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2004, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@2fbe7b12) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@235008e6)
+2025-01-30T00:04:27.137+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2005, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@11047c4e) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@5aa79d9b)
+2025-01-30T00:04:27.137+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2011, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@61d1b36) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@25a9242b)
+2025-01-30T00:04:27.192+01:00  INFO 5460 --- [Backend_ShopFromHome] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-30T00:04:27.227+01:00  INFO 5460 --- [Backend_ShopFromHome] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-30T00:04:27.239+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] .c.JpaMetamodelMappingContextFactoryBean : Initializing JpaMetamodelMappingContext…
+2025-01-30T00:04:27.240+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] .c.JpaMetamodelMappingContextFactoryBean : Finished initializing JpaMetamodelMappingContext
+2025-01-30T00:04:27.253+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Initializing repository instance for com.example.backend_shopfromhome.Repository.CarrelloRepository…
+2025-01-30T00:04:27.255+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] o.s.d.jpa.repository.query.NamedQuery    : Looking up named query 'Carrello.findByIdUtente'
+2025-01-30T00:04:27.255+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] o.s.d.jpa.repository.query.NamedQuery    : Did not find named query Carrello.findByIdUtente
+2025-01-30T00:04:27.258+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Finished creation of repository instance for com.example.backend_shopfromhome.Repository.CarrelloRepository.
+2025-01-30T00:04:27.261+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Initializing repository instance for com.example.backend_shopfromhome.Repository.DettagliCarrelloRepository…
+2025-01-30T00:04:27.262+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] o.s.d.jpa.repository.query.NamedQuery    : Looking up named query 'DettagliCarrello.findById_IdCarrello'
+2025-01-30T00:04:27.262+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] o.s.d.jpa.repository.query.NamedQuery    : Did not find named query DettagliCarrello.findById_IdCarrello
+2025-01-30T00:04:27.263+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Finished creation of repository instance for com.example.backend_shopfromhome.Repository.DettagliCarrelloRepository.
+2025-01-30T00:04:27.267+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Initializing repository instance for com.example.backend_shopfromhome.Repository.ProdottoRepository…
+2025-01-30T00:04:27.269+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] o.s.d.jpa.repository.query.NamedQuery    : Looking up named query 'Prodotto.findByNomeContainingIgnoreCase'
+2025-01-30T00:04:27.269+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] o.s.d.jpa.repository.query.NamedQuery    : Did not find named query Prodotto.findByNomeContainingIgnoreCase
+2025-01-30T00:04:27.270+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] o.s.d.jpa.repository.query.NamedQuery    : Looking up named query 'Prodotto.findByCategoriaId'
+2025-01-30T00:04:27.270+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] o.s.d.jpa.repository.query.NamedQuery    : Did not find named query Prodotto.findByCategoriaId
+2025-01-30T00:04:27.271+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] o.s.d.jpa.repository.query.NamedQuery    : Looking up named query 'Prodotto.findByNomeContaining'
+2025-01-30T00:04:27.271+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] o.s.d.jpa.repository.query.NamedQuery    : Did not find named query Prodotto.findByNomeContaining
+2025-01-30T00:04:27.273+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Finished creation of repository instance for com.example.backend_shopfromhome.Repository.ProdottoRepository.
+2025-01-30T00:04:27.276+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Initializing repository instance for com.example.backend_shopfromhome.Repository.CategoriaRepository…
+2025-01-30T00:04:27.278+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Finished creation of repository instance for com.example.backend_shopfromhome.Repository.CategoriaRepository.
+2025-01-30T00:04:27.282+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Initializing repository instance for com.example.backend_shopfromhome.Repository.DettaglioOrdineRepository…
+2025-01-30T00:04:27.285+01:00 DEBUG 5460 --- [Backend_ShopFromHome] [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Finished creation of repository instance for com.example.backend_shopfromhome.Repository.DettaglioOrdineRepository.
+2025-01-30T00:04:27.286+01:00  WARN 5460 --- [Backend_ShopFromHome] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'ordineController' defined in file [C:\Users\gianl\Desktop\uni\terzo anno\primo semestre\Ingegneria del software\progetto\backend\target\classes\com\example\backend_shopfromhome\Controller\OrdineController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'ordineService': Resolution of declared constructors on bean Class [com.example.backend_shopfromhome.Service.OrdineService] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@541b3142] failed
+2025-01-30T00:04:27.286+01:00  INFO 5460 --- [Backend_ShopFromHome] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-30T00:04:27.286+01:00  INFO 5460 --- [Backend_ShopFromHome] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown initiated...
+2025-01-30T00:04:27.296+01:00  INFO 5460 --- [Backend_ShopFromHome] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown completed.
+2025-01-30T00:04:27.296+01:00  INFO 5460 --- [Backend_ShopFromHome] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-01-30T00:04:27.299+01:00  INFO 5460 --- [Backend_ShopFromHome] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-01-30T00:04:27.300+01:00 ERROR 5460 --- [Backend_ShopFromHome] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'ordineController' defined in file [C:\Users\gianl\Desktop\uni\terzo anno\primo semestre\Ingegneria del software\progetto\backend\target\classes\com\example\backend_shopfromhome\Controller\OrdineController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'ordineService': Resolution of declared constructors on bean Class [com.example.backend_shopfromhome.Service.OrdineService] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@541b3142] failed
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1377) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1214) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:289) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1122) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1093) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1030) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987) ~[spring-context-6.2.1.jar:6.2.1]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.1.jar:6.2.1]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.4.1.jar:3.4.1]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.4.1.jar:3.4.1]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.4.1.jar:3.4.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.4.1.jar:3.4.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.4.1.jar:3.4.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.4.1.jar:3.4.1]
+	at com.example.backend_shopfromhome.BackendShopFromHomeApplication.main(BackendShopFromHomeApplication.java:12) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.4.1.jar:3.4.1]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'ordineService': Resolution of declared constructors on bean Class [com.example.backend_shopfromhome.Service.OrdineService] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@541b3142] failed
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:384) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1316) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1211) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:289) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1573) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1519) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-6.2.1.jar:6.2.1]
+	... 26 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: com/example/backend_shopfromhome/Repository/OrdineRepository
+	at java.base/java.lang.Class.getDeclaredConstructors0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.privateGetDeclaredConstructors(Class.java:3373) ~[na:na]
+	at java.base/java.lang.Class.getDeclaredConstructors(Class.java:2555) ~[na:na]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:379) ~[spring-beans-6.2.1.jar:6.2.1]
+	... 38 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.example.backend_shopfromhome.Repository.OrdineRepository
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525) ~[na:na]
+	at java.base/java.lang.Class.forName0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:467) ~[na:na]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:121) ~[spring-boot-devtools-3.4.1.jar:3.4.1]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525) ~[na:na]
+	... 42 common frames omitted
+
+2025-01-30T00:05:43.164+01:00  INFO 19960 --- [Backend_ShopFromHome] [restartedMain] c.e.b.BackendShopFromHomeApplication     : Starting BackendShopFromHomeApplication using Java 17.0.13 with PID 19960 (C:\Users\gianl\Desktop\uni\terzo anno\primo semestre\Ingegneria del software\progetto\backend\target\classes started by gianl in C:\Users\gianl\Desktop\uni\terzo anno\primo semestre\Ingegneria del software\progetto\backend)
+2025-01-30T00:05:43.166+01:00  INFO 19960 --- [Backend_ShopFromHome] [restartedMain] c.e.b.BackendShopFromHomeApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-01-30T00:05:43.194+01:00  INFO 19960 --- [Backend_ShopFromHome] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-30T00:05:43.194+01:00  INFO 19960 --- [Backend_ShopFromHome] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-30T00:05:43.737+01:00  INFO 19960 --- [Backend_ShopFromHome] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-30T00:05:43.746+01:00 DEBUG 19960 --- [Backend_ShopFromHome] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Scanning for JPA repositories in packages com.example.backend_shopfromhome.
+2025-01-30T00:05:43.753+01:00 DEBUG 19960 --- [Backend_ShopFromHome] [restartedMain] o.s.d.r.c.RepositoryComponentProvider    : Identified candidate component class: file [C:\Users\gianl\Desktop\uni\terzo anno\primo semestre\Ingegneria del software\progetto\backend\target\classes\com\example\backend_shopfromhome\Repository\CarrelloRepository.class]
+2025-01-30T00:05:43.753+01:00 DEBUG 19960 --- [Backend_ShopFromHome] [restartedMain] o.s.d.r.c.RepositoryComponentProvider    : Identified candidate component class: file [C:\Users\gianl\Desktop\uni\terzo anno\primo semestre\Ingegneria del software\progetto\backend\target\classes\com\example\backend_shopfromhome\Repository\CategoriaRepository.class]
+2025-01-30T00:05:43.753+01:00 DEBUG 19960 --- [Backend_ShopFromHome] [restartedMain] o.s.d.r.c.RepositoryComponentProvider    : Identified candidate component class: file [C:\Users\gianl\Desktop\uni\terzo anno\primo semestre\Ingegneria del software\progetto\backend\target\classes\com\example\backend_shopfromhome\Repository\DettagliCarrelloRepository.class]
+2025-01-30T00:05:43.753+01:00 DEBUG 19960 --- [Backend_ShopFromHome] [restartedMain] o.s.d.r.c.RepositoryComponentProvider    : Identified candidate component class: file [C:\Users\gianl\Desktop\uni\terzo anno\primo semestre\Ingegneria del software\progetto\backend\target\classes\com\example\backend_shopfromhome\Repository\DettaglioOrdineRepository.class]
+2025-01-30T00:05:43.753+01:00 DEBUG 19960 --- [Backend_ShopFromHome] [restartedMain] o.s.d.r.c.RepositoryComponentProvider    : Identified candidate component class: file [C:\Users\gianl\Desktop\uni\terzo anno\primo semestre\Ingegneria del software\progetto\backend\target\classes\com\example\backend_shopfromhome\Repository\OrdineRepository.class]
+2025-01-30T00:05:43.753+01:00 DEBUG 19960 --- [Backend_ShopFromHome] [restartedMain] o.s.d.r.c.RepositoryComponentProvider    : Identified candidate component class: file [C:\Users\gianl\Desktop\uni\terzo anno\primo semestre\Ingegneria del software\progetto\backend\target\classes\com\example\backend_shopfromhome\Repository\ProdottoRepository.class]
+2025-01-30T00:05:43.753+01:00 DEBUG 19960 --- [Backend_ShopFromHome] [restartedMain] o.s.d.r.c.RepositoryComponentProvider    : Identified candidate component class: file [C:\Users\gianl\Desktop\uni\terzo anno\primo semestre\Ingegneria del software\progetto\backend\target\classes\com\example\backend_shopfromhome\Repository\UtenteRepository.class]
+2025-01-30T00:05:43.785+01:00  INFO 19960 --- [Backend_ShopFromHome] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 36 ms. Found 7 JPA repository interfaces.
+2025-01-30T00:05:44.158+01:00  INFO 19960 --- [Backend_ShopFromHome] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-01-30T00:05:44.169+01:00  INFO 19960 --- [Backend_ShopFromHome] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-01-30T00:05:44.169+01:00  INFO 19960 --- [Backend_ShopFromHome] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-30T00:05:44.202+01:00  INFO 19960 --- [Backend_ShopFromHome] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-01-30T00:05:44.202+01:00  INFO 19960 --- [Backend_ShopFromHome] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1007 ms
+2025-01-30T00:05:44.303+01:00  INFO 19960 --- [Backend_ShopFromHome] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-30T00:05:44.347+01:00  INFO 19960 --- [Backend_ShopFromHome] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.4.Final
+2025-01-30T00:05:44.377+01:00  INFO 19960 --- [Backend_ShopFromHome] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-01-30T00:05:44.570+01:00  INFO 19960 --- [Backend_ShopFromHome] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-30T00:05:44.591+01:00  INFO 19960 --- [Backend_ShopFromHome] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-01-30T00:05:44.844+01:00  INFO 19960 --- [Backend_ShopFromHome] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@137d4984
+2025-01-30T00:05:44.846+01:00  INFO 19960 --- [Backend_ShopFromHome] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-01-30T00:05:44.880+01:00  WARN 19960 --- [Backend_ShopFromHome] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-30T00:05:44.880+01:00  WARN 19960 --- [Backend_ShopFromHome] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-01-30T00:05:44.891+01:00  INFO 19960 --- [Backend_ShopFromHome] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-01-30T00:05:44.895+01:00 DEBUG 19960 --- [Backend_ShopFromHome] [restartedMain] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(12, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@29d18bc1) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@d4262b3)
+2025-01-30T00:05:44.896+01:00 DEBUG 19960 --- [Backend_ShopFromHome] [restartedMain] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-9, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@4e336cdb) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@3182fa14)
+2025-01-30T00:05:44.896+01:00 DEBUG 19960 --- [Backend_ShopFromHome] [restartedMain] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-3, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@1428f066) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@ae15faa)
+2025-01-30T00:05:44.896+01:00 DEBUG 19960 --- [Backend_ShopFromHome] [restartedMain] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4003, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@5f61af99) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@7915ac3b)
+2025-01-30T00:05:44.896+01:00 DEBUG 19960 --- [Backend_ShopFromHome] [restartedMain] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4001, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@2aedc8bf) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@2a71de47)
+2025-01-30T00:05:44.896+01:00 DEBUG 19960 --- [Backend_ShopFromHome] [restartedMain] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4002, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@783eb1f7) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@2c9eaebf)
+2025-01-30T00:05:44.896+01:00 DEBUG 19960 --- [Backend_ShopFromHome] [restartedMain] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2004, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@687233a3) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@4cd55b0c)
+2025-01-30T00:05:44.897+01:00 DEBUG 19960 --- [Backend_ShopFromHome] [restartedMain] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2005, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@4169ea68) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@185b5fac)
+2025-01-30T00:05:44.897+01:00 DEBUG 19960 --- [Backend_ShopFromHome] [restartedMain] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2011, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@614d882f) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@7a6b231)
+2025-01-30T00:05:47.453+01:00  INFO 19960 --- [Backend_ShopFromHome] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-30T00:05:47.561+01:00  INFO 19960 --- [Backend_ShopFromHome] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-30T00:05:47.607+01:00 DEBUG 19960 --- [Backend_ShopFromHome] [restartedMain] .c.JpaMetamodelMappingContextFactoryBean : Initializing JpaMetamodelMappingContext…
+2025-01-30T00:05:47.622+01:00 DEBUG 19960 --- [Backend_ShopFromHome] [restartedMain] .c.JpaMetamodelMappingContextFactoryBean : Finished initializing JpaMetamodelMappingContext
+2025-01-30T00:05:47.755+01:00 DEBUG 19960 --- [Backend_ShopFromHome] [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Initializing repository instance for com.example.backend_shopfromhome.Repository.CarrelloRepository…
+2025-01-30T00:05:47.809+01:00 DEBUG 19960 --- [Backend_ShopFromHome] [restartedMain] o.s.d.jpa.repository.query.NamedQuery    : Looking up named query 'Carrello.findByIdUtente'
+2025-01-30T00:05:47.813+01:00 DEBUG 19960 --- [Backend_ShopFromHome] [restartedMain] o.s.d.jpa.repository.query.NamedQuery    : Did not find named query Carrello.findByIdUtente
+2025-01-30T00:05:47.874+01:00 DEBUG 19960 --- [Backend_ShopFromHome] [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Finished creation of repository instance for com.example.backend_shopfromhome.Repository.CarrelloRepository.
+2025-01-30T00:05:47.880+01:00 DEBUG 19960 --- [Backend_ShopFromHome] [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Initializing repository instance for com.example.backend_shopfromhome.Repository.DettagliCarrelloRepository…
+2025-01-30T00:05:47.883+01:00 DEBUG 19960 --- [Backend_ShopFromHome] [restartedMain] o.s.d.jpa.repository.query.NamedQuery    : Looking up named query 'DettagliCarrello.findById_IdCarrello'
+2025-01-30T00:05:47.883+01:00 DEBUG 19960 --- [Backend_ShopFromHome] [restartedMain] o.s.d.jpa.repository.query.NamedQuery    : Did not find named query DettagliCarrello.findById_IdCarrello
+2025-01-30T00:05:47.890+01:00 DEBUG 19960 --- [Backend_ShopFromHome] [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Finished creation of repository instance for com.example.backend_shopfromhome.Repository.DettagliCarrelloRepository.
+2025-01-30T00:05:47.894+01:00 DEBUG 19960 --- [Backend_ShopFromHome] [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Initializing repository instance for com.example.backend_shopfromhome.Repository.ProdottoRepository…
+2025-01-30T00:05:47.897+01:00 DEBUG 19960 --- [Backend_ShopFromHome] [restartedMain] o.s.d.jpa.repository.query.NamedQuery    : Looking up named query 'Prodotto.findByNomeContainingIgnoreCase'
+2025-01-30T00:05:47.897+01:00 DEBUG 19960 --- [Backend_ShopFromHome] [restartedMain] o.s.d.jpa.repository.query.NamedQuery    : Did not find named query Prodotto.findByNomeContainingIgnoreCase
+2025-01-30T00:05:47.901+01:00 DEBUG 19960 --- [Backend_ShopFromHome] [restartedMain] o.s.d.jpa.repository.query.NamedQuery    : Looking up named query 'Prodotto.findByCategoriaId'
+2025-01-30T00:05:47.902+01:00 DEBUG 19960 --- [Backend_ShopFromHome] [restartedMain] o.s.d.jpa.repository.query.NamedQuery    : Did not find named query Prodotto.findByCategoriaId
+2025-01-30T00:05:47.904+01:00 DEBUG 19960 --- [Backend_ShopFromHome] [restartedMain] o.s.d.jpa.repository.query.NamedQuery    : Looking up named query 'Prodotto.findByNomeContaining'
+2025-01-30T00:05:47.905+01:00 DEBUG 19960 --- [Backend_ShopFromHome] [restartedMain] o.s.d.jpa.repository.query.NamedQuery    : Did not find named query Prodotto.findByNomeContaining
+2025-01-30T00:05:47.907+01:00 DEBUG 19960 --- [Backend_ShopFromHome] [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Finished creation of repository instance for com.example.backend_shopfromhome.Repository.ProdottoRepository.
+2025-01-30T00:05:47.913+01:00 DEBUG 19960 --- [Backend_ShopFromHome] [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Initializing repository instance for com.example.backend_shopfromhome.Repository.CategoriaRepository…
+2025-01-30T00:05:47.916+01:00 DEBUG 19960 --- [Backend_ShopFromHome] [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Finished creation of repository instance for com.example.backend_shopfromhome.Repository.CategoriaRepository.
+2025-01-30T00:05:47.921+01:00 DEBUG 19960 --- [Backend_ShopFromHome] [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Initializing repository instance for com.example.backend_shopfromhome.Repository.DettaglioOrdineRepository…
+2025-01-30T00:05:47.926+01:00 DEBUG 19960 --- [Backend_ShopFromHome] [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Finished creation of repository instance for com.example.backend_shopfromhome.Repository.DettaglioOrdineRepository.
+2025-01-30T00:05:47.931+01:00 DEBUG 19960 --- [Backend_ShopFromHome] [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Initializing repository instance for com.example.backend_shopfromhome.Repository.OrdineRepository…
+2025-01-30T00:05:47.936+01:00 DEBUG 19960 --- [Backend_ShopFromHome] [restartedMain] o.s.d.jpa.repository.query.NamedQuery    : Looking up named query 'Ordine.findByProdottoIdAndStato'
+2025-01-30T00:05:47.937+01:00 DEBUG 19960 --- [Backend_ShopFromHome] [restartedMain] o.s.d.jpa.repository.query.NamedQuery    : Did not find named query Ordine.findByProdottoIdAndStato
+2025-01-30T00:05:47.940+01:00  WARN 19960 --- [Backend_ShopFromHome] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'ordineController' defined in file [C:\Users\gianl\Desktop\uni\terzo anno\primo semestre\Ingegneria del software\progetto\backend\target\classes\com\example\backend_shopfromhome\Controller\OrdineController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'ordineService' defined in file [C:\Users\gianl\Desktop\uni\terzo anno\primo semestre\Ingegneria del software\progetto\backend\target\classes\com\example\backend_shopfromhome\Service\OrdineService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'ordineRepository' defined in com.example.backend_shopfromhome.Repository.OrdineRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Could not create query for public abstract java.util.List com.example.backend_shopfromhome.Repository.OrdineRepository.findByProdottoIdAndStato(java.lang.Long,com.example.backend_shopfromhome.Model.StatoOrdine); Reason: Failed to create query for method public abstract java.util.List com.example.backend_shopfromhome.Repository.OrdineRepository.findByProdottoIdAndStato(java.lang.Long,com.example.backend_shopfromhome.Model.StatoOrdine); No property 'prodottoId' found for type 'Ordine'
+2025-01-30T00:05:47.941+01:00  INFO 19960 --- [Backend_ShopFromHome] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-30T00:05:47.945+01:00  INFO 19960 --- [Backend_ShopFromHome] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-01-30T00:05:47.950+01:00  INFO 19960 --- [Backend_ShopFromHome] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-01-30T00:05:47.952+01:00  INFO 19960 --- [Backend_ShopFromHome] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-01-30T00:05:47.968+01:00  INFO 19960 --- [Backend_ShopFromHome] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-01-30T00:05:47.991+01:00 ERROR 19960 --- [Backend_ShopFromHome] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'ordineController' defined in file [C:\Users\gianl\Desktop\uni\terzo anno\primo semestre\Ingegneria del software\progetto\backend\target\classes\com\example\backend_shopfromhome\Controller\OrdineController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'ordineService' defined in file [C:\Users\gianl\Desktop\uni\terzo anno\primo semestre\Ingegneria del software\progetto\backend\target\classes\com\example\backend_shopfromhome\Service\OrdineService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'ordineRepository' defined in com.example.backend_shopfromhome.Repository.OrdineRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Could not create query for public abstract java.util.List com.example.backend_shopfromhome.Repository.OrdineRepository.findByProdottoIdAndStato(java.lang.Long,com.example.backend_shopfromhome.Model.StatoOrdine); Reason: Failed to create query for method public abstract java.util.List com.example.backend_shopfromhome.Repository.OrdineRepository.findByProdottoIdAndStato(java.lang.Long,com.example.backend_shopfromhome.Model.StatoOrdine); No property 'prodottoId' found for type 'Ordine'
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1377) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1214) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:289) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1122) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1093) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1030) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987) ~[spring-context-6.2.1.jar:6.2.1]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.1.jar:6.2.1]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.4.1.jar:3.4.1]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.4.1.jar:3.4.1]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.4.1.jar:3.4.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.4.1.jar:3.4.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.4.1.jar:3.4.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.4.1.jar:3.4.1]
+	at com.example.backend_shopfromhome.BackendShopFromHomeApplication.main(BackendShopFromHomeApplication.java:12) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.4.1.jar:3.4.1]
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'ordineService' defined in file [C:\Users\gianl\Desktop\uni\terzo anno\primo semestre\Ingegneria del software\progetto\backend\target\classes\com\example\backend_shopfromhome\Service\OrdineService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'ordineRepository' defined in com.example.backend_shopfromhome.Repository.OrdineRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Could not create query for public abstract java.util.List com.example.backend_shopfromhome.Repository.OrdineRepository.findByProdottoIdAndStato(java.lang.Long,com.example.backend_shopfromhome.Model.StatoOrdine); Reason: Failed to create query for method public abstract java.util.List com.example.backend_shopfromhome.Repository.OrdineRepository.findByProdottoIdAndStato(java.lang.Long,com.example.backend_shopfromhome.Model.StatoOrdine); No property 'prodottoId' found for type 'Ordine'
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1377) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1214) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:289) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1573) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1519) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-6.2.1.jar:6.2.1]
+	... 26 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'ordineRepository' defined in com.example.backend_shopfromhome.Repository.OrdineRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Could not create query for public abstract java.util.List com.example.backend_shopfromhome.Repository.OrdineRepository.findByProdottoIdAndStato(java.lang.Long,com.example.backend_shopfromhome.Model.StatoOrdine); Reason: Failed to create query for method public abstract java.util.List com.example.backend_shopfromhome.Repository.OrdineRepository.findByProdottoIdAndStato(java.lang.Long,com.example.backend_shopfromhome.Model.StatoOrdine); No property 'prodottoId' found for type 'Ordine'
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1808) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:289) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1573) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1519) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-6.2.1.jar:6.2.1]
+	... 39 common frames omitted
+Caused by: org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract java.util.List com.example.backend_shopfromhome.Repository.OrdineRepository.findByProdottoIdAndStato(java.lang.Long,com.example.backend_shopfromhome.Model.StatoOrdine); Reason: Failed to create query for method public abstract java.util.List com.example.backend_shopfromhome.Repository.OrdineRepository.findByProdottoIdAndStato(java.lang.Long,com.example.backend_shopfromhome.Model.StatoOrdine); No property 'prodottoId' found for type 'Ordine'
+	at org.springframework.data.repository.query.QueryCreationException.create(QueryCreationException.java:101) ~[spring-data-commons-3.4.1.jar:3.4.1]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lookupQuery(QueryExecutorMethodInterceptor.java:120) ~[spring-data-commons-3.4.1.jar:3.4.1]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.mapMethodsToQuery(QueryExecutorMethodInterceptor.java:104) ~[spring-data-commons-3.4.1.jar:3.4.1]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lambda$new$0(QueryExecutorMethodInterceptor.java:92) ~[spring-data-commons-3.4.1.jar:3.4.1]
+	at java.base/java.util.Optional.map(Optional.java:260) ~[na:na]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.<init>(QueryExecutorMethodInterceptor.java:92) ~[spring-data-commons-3.4.1.jar:3.4.1]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:440) ~[spring-data-commons-3.4.1.jar:3.4.1]
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.lambda$afterPropertiesSet$4(RepositoryFactoryBeanSupport.java:350) ~[spring-data-commons-3.4.1.jar:3.4.1]
+	at org.springframework.data.util.Lazy.getNullable(Lazy.java:135) ~[spring-data-commons-3.4.1.jar:3.4.1]
+	at org.springframework.data.util.Lazy.get(Lazy.java:113) ~[spring-data-commons-3.4.1.jar:3.4.1]
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:356) ~[spring-data-commons-3.4.1.jar:3.4.1]
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean.afterPropertiesSet(JpaRepositoryFactoryBean.java:132) ~[spring-data-jpa-3.4.1.jar:3.4.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1855) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804) ~[spring-beans-6.2.1.jar:6.2.1]
+	... 49 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Failed to create query for method public abstract java.util.List com.example.backend_shopfromhome.Repository.OrdineRepository.findByProdottoIdAndStato(java.lang.Long,com.example.backend_shopfromhome.Model.StatoOrdine); No property 'prodottoId' found for type 'Ordine'
+	at org.springframework.data.jpa.repository.query.PartTreeJpaQuery.<init>(PartTreeJpaQuery.java:107) ~[spring-data-jpa-3.4.1.jar:3.4.1]
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$CreateQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:128) ~[spring-data-jpa-3.4.1.jar:3.4.1]
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$CreateIfNotFoundQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:262) ~[spring-data-jpa-3.4.1.jar:3.4.1]
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$AbstractQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:99) ~[spring-data-jpa-3.4.1.jar:3.4.1]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lookupQuery(QueryExecutorMethodInterceptor.java:116) ~[spring-data-commons-3.4.1.jar:3.4.1]
+	... 61 common frames omitted
+Caused by: org.springframework.data.mapping.PropertyReferenceException: No property 'prodottoId' found for type 'Ordine'
+	at org.springframework.data.mapping.PropertyPath.<init>(PropertyPath.java:94) ~[spring-data-commons-3.4.1.jar:3.4.1]
+	at org.springframework.data.mapping.PropertyPath.create(PropertyPath.java:455) ~[spring-data-commons-3.4.1.jar:3.4.1]
+	at org.springframework.data.mapping.PropertyPath.create(PropertyPath.java:431) ~[spring-data-commons-3.4.1.jar:3.4.1]
+	at org.springframework.data.mapping.PropertyPath.lambda$from$0(PropertyPath.java:384) ~[spring-data-commons-3.4.1.jar:3.4.1]
+	at java.base/java.util.concurrent.ConcurrentMap.computeIfAbsent(ConcurrentMap.java:330) ~[na:na]
+	at org.springframework.data.mapping.PropertyPath.from(PropertyPath.java:366) ~[spring-data-commons-3.4.1.jar:3.4.1]
+	at org.springframework.data.mapping.PropertyPath.from(PropertyPath.java:344) ~[spring-data-commons-3.4.1.jar:3.4.1]
+	at org.springframework.data.repository.query.parser.Part.<init>(Part.java:81) ~[spring-data-commons-3.4.1.jar:3.4.1]
+	at org.springframework.data.repository.query.parser.PartTree$OrPart.lambda$new$0(PartTree.java:259) ~[spring-data-commons-3.4.1.jar:3.4.1]
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) ~[na:na]
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682) ~[na:na]
+	at org.springframework.data.repository.query.parser.PartTree$OrPart.<init>(PartTree.java:260) ~[spring-data-commons-3.4.1.jar:3.4.1]
+	at org.springframework.data.repository.query.parser.PartTree$Predicate.lambda$new$0(PartTree.java:389) ~[spring-data-commons-3.4.1.jar:3.4.1]
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) ~[na:na]
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682) ~[na:na]
+	at org.springframework.data.repository.query.parser.PartTree$Predicate.<init>(PartTree.java:390) ~[spring-data-commons-3.4.1.jar:3.4.1]
+	at org.springframework.data.repository.query.parser.PartTree.<init>(PartTree.java:103) ~[spring-data-commons-3.4.1.jar:3.4.1]
+	at org.springframework.data.jpa.repository.query.PartTreeJpaQuery.<init>(PartTreeJpaQuery.java:101) ~[spring-data-jpa-3.4.1.jar:3.4.1]
+	... 65 common frames omitted
+
+2025-01-30T00:09:04.107+01:00  INFO 36448 --- [Backend_ShopFromHome] [restartedMain] c.e.b.BackendShopFromHomeApplication     : Starting BackendShopFromHomeApplication using Java 17.0.13 with PID 36448 (C:\Users\gianl\Desktop\uni\terzo anno\primo semestre\Ingegneria del software\progetto\backend\target\classes started by gianl in C:\Users\gianl\Desktop\uni\terzo anno\primo semestre\Ingegneria del software\progetto\backend)
+2025-01-30T00:09:04.109+01:00  INFO 36448 --- [Backend_ShopFromHome] [restartedMain] c.e.b.BackendShopFromHomeApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-01-30T00:09:04.150+01:00  INFO 36448 --- [Backend_ShopFromHome] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-30T00:09:04.151+01:00  INFO 36448 --- [Backend_ShopFromHome] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-30T00:09:04.780+01:00  INFO 36448 --- [Backend_ShopFromHome] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-30T00:09:04.793+01:00 DEBUG 36448 --- [Backend_ShopFromHome] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Scanning for JPA repositories in packages com.example.backend_shopfromhome.
+2025-01-30T00:09:04.801+01:00 DEBUG 36448 --- [Backend_ShopFromHome] [restartedMain] o.s.d.r.c.RepositoryComponentProvider    : Identified candidate component class: file [C:\Users\gianl\Desktop\uni\terzo anno\primo semestre\Ingegneria del software\progetto\backend\target\classes\com\example\backend_shopfromhome\Repository\CarrelloRepository.class]
+2025-01-30T00:09:04.802+01:00 DEBUG 36448 --- [Backend_ShopFromHome] [restartedMain] o.s.d.r.c.RepositoryComponentProvider    : Identified candidate component class: file [C:\Users\gianl\Desktop\uni\terzo anno\primo semestre\Ingegneria del software\progetto\backend\target\classes\com\example\backend_shopfromhome\Repository\CategoriaRepository.class]
+2025-01-30T00:09:04.802+01:00 DEBUG 36448 --- [Backend_ShopFromHome] [restartedMain] o.s.d.r.c.RepositoryComponentProvider    : Identified candidate component class: file [C:\Users\gianl\Desktop\uni\terzo anno\primo semestre\Ingegneria del software\progetto\backend\target\classes\com\example\backend_shopfromhome\Repository\DettagliCarrelloRepository.class]
+2025-01-30T00:09:04.802+01:00 DEBUG 36448 --- [Backend_ShopFromHome] [restartedMain] o.s.d.r.c.RepositoryComponentProvider    : Identified candidate component class: file [C:\Users\gianl\Desktop\uni\terzo anno\primo semestre\Ingegneria del software\progetto\backend\target\classes\com\example\backend_shopfromhome\Repository\DettaglioOrdineRepository.class]
+2025-01-30T00:09:04.802+01:00 DEBUG 36448 --- [Backend_ShopFromHome] [restartedMain] o.s.d.r.c.RepositoryComponentProvider    : Identified candidate component class: file [C:\Users\gianl\Desktop\uni\terzo anno\primo semestre\Ingegneria del software\progetto\backend\target\classes\com\example\backend_shopfromhome\Repository\OrdineRepository.class]
+2025-01-30T00:09:04.802+01:00 DEBUG 36448 --- [Backend_ShopFromHome] [restartedMain] o.s.d.r.c.RepositoryComponentProvider    : Identified candidate component class: file [C:\Users\gianl\Desktop\uni\terzo anno\primo semestre\Ingegneria del software\progetto\backend\target\classes\com\example\backend_shopfromhome\Repository\ProdottoRepository.class]
+2025-01-30T00:09:04.802+01:00 DEBUG 36448 --- [Backend_ShopFromHome] [restartedMain] o.s.d.r.c.RepositoryComponentProvider    : Identified candidate component class: file [C:\Users\gianl\Desktop\uni\terzo anno\primo semestre\Ingegneria del software\progetto\backend\target\classes\com\example\backend_shopfromhome\Repository\UtenteRepository.class]
+2025-01-30T00:09:04.841+01:00  INFO 36448 --- [Backend_ShopFromHome] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 46 ms. Found 7 JPA repository interfaces.
+2025-01-30T00:09:05.366+01:00  INFO 36448 --- [Backend_ShopFromHome] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-01-30T00:09:05.375+01:00  INFO 36448 --- [Backend_ShopFromHome] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-01-30T00:09:05.376+01:00  INFO 36448 --- [Backend_ShopFromHome] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-30T00:09:05.422+01:00  INFO 36448 --- [Backend_ShopFromHome] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-01-30T00:09:05.422+01:00  INFO 36448 --- [Backend_ShopFromHome] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1271 ms
+2025-01-30T00:09:05.560+01:00  INFO 36448 --- [Backend_ShopFromHome] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-30T00:09:05.621+01:00  INFO 36448 --- [Backend_ShopFromHome] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.4.Final
+2025-01-30T00:09:05.653+01:00  INFO 36448 --- [Backend_ShopFromHome] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-01-30T00:09:05.946+01:00  INFO 36448 --- [Backend_ShopFromHome] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-30T00:09:05.976+01:00  INFO 36448 --- [Backend_ShopFromHome] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-01-30T00:09:06.235+01:00  INFO 36448 --- [Backend_ShopFromHome] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@16475829
+2025-01-30T00:09:06.238+01:00  INFO 36448 --- [Backend_ShopFromHome] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-01-30T00:09:06.283+01:00  WARN 36448 --- [Backend_ShopFromHome] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-30T00:09:06.284+01:00  WARN 36448 --- [Backend_ShopFromHome] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-01-30T00:09:06.299+01:00  INFO 36448 --- [Backend_ShopFromHome] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-01-30T00:09:06.304+01:00 DEBUG 36448 --- [Backend_ShopFromHome] [restartedMain] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(12, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@43f547f6) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@2367ea01)
+2025-01-30T00:09:06.305+01:00 DEBUG 36448 --- [Backend_ShopFromHome] [restartedMain] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-9, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@6dc19309) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@6af524b9)
+2025-01-30T00:09:06.305+01:00 DEBUG 36448 --- [Backend_ShopFromHome] [restartedMain] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-3, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@35614e6) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@1f7dc16f)
+2025-01-30T00:09:06.306+01:00 DEBUG 36448 --- [Backend_ShopFromHome] [restartedMain] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4003, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@7e454052) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@3d5673cf)
+2025-01-30T00:09:06.306+01:00 DEBUG 36448 --- [Backend_ShopFromHome] [restartedMain] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4001, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@e14b1a7) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@7f937fb3)
+2025-01-30T00:09:06.306+01:00 DEBUG 36448 --- [Backend_ShopFromHome] [restartedMain] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4002, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@2b80f7c3) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@25462177)
+2025-01-30T00:09:06.306+01:00 DEBUG 36448 --- [Backend_ShopFromHome] [restartedMain] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2004, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@e7425f1) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@6a7ead6b)
+2025-01-30T00:09:06.306+01:00 DEBUG 36448 --- [Backend_ShopFromHome] [restartedMain] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2005, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@46ec7108) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@5235bd3b)
+2025-01-30T00:09:06.307+01:00 DEBUG 36448 --- [Backend_ShopFromHome] [restartedMain] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2011, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@7dc14121) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@624bbe07)
+2025-01-30T00:09:07.353+01:00  INFO 36448 --- [Backend_ShopFromHome] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-30T00:09:07.450+01:00  INFO 36448 --- [Backend_ShopFromHome] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-30T00:09:07.494+01:00 DEBUG 36448 --- [Backend_ShopFromHome] [restartedMain] .c.JpaMetamodelMappingContextFactoryBean : Initializing JpaMetamodelMappingContext…
+2025-01-30T00:09:07.505+01:00 DEBUG 36448 --- [Backend_ShopFromHome] [restartedMain] .c.JpaMetamodelMappingContextFactoryBean : Finished initializing JpaMetamodelMappingContext
+2025-01-30T00:09:07.633+01:00 DEBUG 36448 --- [Backend_ShopFromHome] [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Initializing repository instance for com.example.backend_shopfromhome.Repository.CarrelloRepository…
+2025-01-30T00:09:07.680+01:00 DEBUG 36448 --- [Backend_ShopFromHome] [restartedMain] o.s.d.jpa.repository.query.NamedQuery    : Looking up named query 'Carrello.findByIdUtente'
+2025-01-30T00:09:07.682+01:00 DEBUG 36448 --- [Backend_ShopFromHome] [restartedMain] o.s.d.jpa.repository.query.NamedQuery    : Did not find named query Carrello.findByIdUtente
+2025-01-30T00:09:07.739+01:00 DEBUG 36448 --- [Backend_ShopFromHome] [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Finished creation of repository instance for com.example.backend_shopfromhome.Repository.CarrelloRepository.
+2025-01-30T00:09:07.745+01:00 DEBUG 36448 --- [Backend_ShopFromHome] [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Initializing repository instance for com.example.backend_shopfromhome.Repository.DettagliCarrelloRepository…
+2025-01-30T00:09:07.749+01:00 DEBUG 36448 --- [Backend_ShopFromHome] [restartedMain] o.s.d.jpa.repository.query.NamedQuery    : Looking up named query 'DettagliCarrello.findById_IdCarrello'
+2025-01-30T00:09:07.750+01:00 DEBUG 36448 --- [Backend_ShopFromHome] [restartedMain] o.s.d.jpa.repository.query.NamedQuery    : Did not find named query DettagliCarrello.findById_IdCarrello
+2025-01-30T00:09:07.758+01:00 DEBUG 36448 --- [Backend_ShopFromHome] [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Finished creation of repository instance for com.example.backend_shopfromhome.Repository.DettagliCarrelloRepository.
+2025-01-30T00:09:07.761+01:00 DEBUG 36448 --- [Backend_ShopFromHome] [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Initializing repository instance for com.example.backend_shopfromhome.Repository.ProdottoRepository…
+2025-01-30T00:09:07.766+01:00 DEBUG 36448 --- [Backend_ShopFromHome] [restartedMain] o.s.d.jpa.repository.query.NamedQuery    : Looking up named query 'Prodotto.findByNomeContainingIgnoreCase'
+2025-01-30T00:09:07.766+01:00 DEBUG 36448 --- [Backend_ShopFromHome] [restartedMain] o.s.d.jpa.repository.query.NamedQuery    : Did not find named query Prodotto.findByNomeContainingIgnoreCase
+2025-01-30T00:09:07.769+01:00 DEBUG 36448 --- [Backend_ShopFromHome] [restartedMain] o.s.d.jpa.repository.query.NamedQuery    : Looking up named query 'Prodotto.findByCategoriaId'
+2025-01-30T00:09:07.779+01:00 DEBUG 36448 --- [Backend_ShopFromHome] [restartedMain] o.s.d.jpa.repository.query.NamedQuery    : Did not find named query Prodotto.findByCategoriaId
+2025-01-30T00:09:07.783+01:00 DEBUG 36448 --- [Backend_ShopFromHome] [restartedMain] o.s.d.jpa.repository.query.NamedQuery    : Looking up named query 'Prodotto.findByNomeContaining'
+2025-01-30T00:09:07.784+01:00 DEBUG 36448 --- [Backend_ShopFromHome] [restartedMain] o.s.d.jpa.repository.query.NamedQuery    : Did not find named query Prodotto.findByNomeContaining
+2025-01-30T00:09:07.786+01:00 DEBUG 36448 --- [Backend_ShopFromHome] [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Finished creation of repository instance for com.example.backend_shopfromhome.Repository.ProdottoRepository.
+2025-01-30T00:09:07.794+01:00 DEBUG 36448 --- [Backend_ShopFromHome] [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Initializing repository instance for com.example.backend_shopfromhome.Repository.CategoriaRepository…
+2025-01-30T00:09:07.796+01:00 DEBUG 36448 --- [Backend_ShopFromHome] [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Finished creation of repository instance for com.example.backend_shopfromhome.Repository.CategoriaRepository.
+2025-01-30T00:09:07.800+01:00 DEBUG 36448 --- [Backend_ShopFromHome] [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Initializing repository instance for com.example.backend_shopfromhome.Repository.DettaglioOrdineRepository…
+2025-01-30T00:09:07.804+01:00 DEBUG 36448 --- [Backend_ShopFromHome] [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Finished creation of repository instance for com.example.backend_shopfromhome.Repository.DettaglioOrdineRepository.
+2025-01-30T00:09:07.810+01:00 DEBUG 36448 --- [Backend_ShopFromHome] [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Initializing repository instance for com.example.backend_shopfromhome.Repository.OrdineRepository…
+2025-01-30T00:09:07.811+01:00 DEBUG 36448 --- [Backend_ShopFromHome] [restartedMain] o.s.d.jpa.repository.query.NamedQuery    : Looking up named query 'Ordine.findByProdottoIdAndStato'
+2025-01-30T00:09:07.812+01:00 DEBUG 36448 --- [Backend_ShopFromHome] [restartedMain] o.s.d.jpa.repository.query.NamedQuery    : Did not find named query Ordine.findByProdottoIdAndStato
+2025-01-30T00:09:07.816+01:00  WARN 36448 --- [Backend_ShopFromHome] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'ordineController' defined in file [C:\Users\gianl\Desktop\uni\terzo anno\primo semestre\Ingegneria del software\progetto\backend\target\classes\com\example\backend_shopfromhome\Controller\OrdineController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'ordineService' defined in file [C:\Users\gianl\Desktop\uni\terzo anno\primo semestre\Ingegneria del software\progetto\backend\target\classes\com\example\backend_shopfromhome\Service\OrdineService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'ordineRepository' defined in com.example.backend_shopfromhome.Repository.OrdineRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Could not create query for public abstract java.util.List com.example.backend_shopfromhome.Repository.OrdineRepository.findByProdottoIdAndStato(java.lang.Long,com.example.backend_shopfromhome.Model.StatoOrdine); Reason: Failed to create query for method public abstract java.util.List com.example.backend_shopfromhome.Repository.OrdineRepository.findByProdottoIdAndStato(java.lang.Long,com.example.backend_shopfromhome.Model.StatoOrdine); No property 'prodottoId' found for type 'Ordine'
+2025-01-30T00:09:07.817+01:00  INFO 36448 --- [Backend_ShopFromHome] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-30T00:09:07.821+01:00  INFO 36448 --- [Backend_ShopFromHome] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-01-30T00:09:07.826+01:00  INFO 36448 --- [Backend_ShopFromHome] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-01-30T00:09:07.828+01:00  INFO 36448 --- [Backend_ShopFromHome] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-01-30T00:09:07.854+01:00  INFO 36448 --- [Backend_ShopFromHome] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-01-30T00:09:07.879+01:00 ERROR 36448 --- [Backend_ShopFromHome] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'ordineController' defined in file [C:\Users\gianl\Desktop\uni\terzo anno\primo semestre\Ingegneria del software\progetto\backend\target\classes\com\example\backend_shopfromhome\Controller\OrdineController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'ordineService' defined in file [C:\Users\gianl\Desktop\uni\terzo anno\primo semestre\Ingegneria del software\progetto\backend\target\classes\com\example\backend_shopfromhome\Service\OrdineService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'ordineRepository' defined in com.example.backend_shopfromhome.Repository.OrdineRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Could not create query for public abstract java.util.List com.example.backend_shopfromhome.Repository.OrdineRepository.findByProdottoIdAndStato(java.lang.Long,com.example.backend_shopfromhome.Model.StatoOrdine); Reason: Failed to create query for method public abstract java.util.List com.example.backend_shopfromhome.Repository.OrdineRepository.findByProdottoIdAndStato(java.lang.Long,com.example.backend_shopfromhome.Model.StatoOrdine); No property 'prodottoId' found for type 'Ordine'
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1377) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1214) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:289) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1122) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1093) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1030) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987) ~[spring-context-6.2.1.jar:6.2.1]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.1.jar:6.2.1]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.4.1.jar:3.4.1]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.4.1.jar:3.4.1]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.4.1.jar:3.4.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.4.1.jar:3.4.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.4.1.jar:3.4.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.4.1.jar:3.4.1]
+	at com.example.backend_shopfromhome.BackendShopFromHomeApplication.main(BackendShopFromHomeApplication.java:12) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.4.1.jar:3.4.1]
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'ordineService' defined in file [C:\Users\gianl\Desktop\uni\terzo anno\primo semestre\Ingegneria del software\progetto\backend\target\classes\com\example\backend_shopfromhome\Service\OrdineService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'ordineRepository' defined in com.example.backend_shopfromhome.Repository.OrdineRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Could not create query for public abstract java.util.List com.example.backend_shopfromhome.Repository.OrdineRepository.findByProdottoIdAndStato(java.lang.Long,com.example.backend_shopfromhome.Model.StatoOrdine); Reason: Failed to create query for method public abstract java.util.List com.example.backend_shopfromhome.Repository.OrdineRepository.findByProdottoIdAndStato(java.lang.Long,com.example.backend_shopfromhome.Model.StatoOrdine); No property 'prodottoId' found for type 'Ordine'
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1377) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1214) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:289) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1573) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1519) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-6.2.1.jar:6.2.1]
+	... 26 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'ordineRepository' defined in com.example.backend_shopfromhome.Repository.OrdineRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Could not create query for public abstract java.util.List com.example.backend_shopfromhome.Repository.OrdineRepository.findByProdottoIdAndStato(java.lang.Long,com.example.backend_shopfromhome.Model.StatoOrdine); Reason: Failed to create query for method public abstract java.util.List com.example.backend_shopfromhome.Repository.OrdineRepository.findByProdottoIdAndStato(java.lang.Long,com.example.backend_shopfromhome.Model.StatoOrdine); No property 'prodottoId' found for type 'Ordine'
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1808) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:289) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1573) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1519) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-6.2.1.jar:6.2.1]
+	... 39 common frames omitted
+Caused by: org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract java.util.List com.example.backend_shopfromhome.Repository.OrdineRepository.findByProdottoIdAndStato(java.lang.Long,com.example.backend_shopfromhome.Model.StatoOrdine); Reason: Failed to create query for method public abstract java.util.List com.example.backend_shopfromhome.Repository.OrdineRepository.findByProdottoIdAndStato(java.lang.Long,com.example.backend_shopfromhome.Model.StatoOrdine); No property 'prodottoId' found for type 'Ordine'
+	at org.springframework.data.repository.query.QueryCreationException.create(QueryCreationException.java:101) ~[spring-data-commons-3.4.1.jar:3.4.1]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lookupQuery(QueryExecutorMethodInterceptor.java:120) ~[spring-data-commons-3.4.1.jar:3.4.1]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.mapMethodsToQuery(QueryExecutorMethodInterceptor.java:104) ~[spring-data-commons-3.4.1.jar:3.4.1]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lambda$new$0(QueryExecutorMethodInterceptor.java:92) ~[spring-data-commons-3.4.1.jar:3.4.1]
+	at java.base/java.util.Optional.map(Optional.java:260) ~[na:na]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.<init>(QueryExecutorMethodInterceptor.java:92) ~[spring-data-commons-3.4.1.jar:3.4.1]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:440) ~[spring-data-commons-3.4.1.jar:3.4.1]
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.lambda$afterPropertiesSet$4(RepositoryFactoryBeanSupport.java:350) ~[spring-data-commons-3.4.1.jar:3.4.1]
+	at org.springframework.data.util.Lazy.getNullable(Lazy.java:135) ~[spring-data-commons-3.4.1.jar:3.4.1]
+	at org.springframework.data.util.Lazy.get(Lazy.java:113) ~[spring-data-commons-3.4.1.jar:3.4.1]
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:356) ~[spring-data-commons-3.4.1.jar:3.4.1]
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean.afterPropertiesSet(JpaRepositoryFactoryBean.java:132) ~[spring-data-jpa-3.4.1.jar:3.4.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1855) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804) ~[spring-beans-6.2.1.jar:6.2.1]
+	... 49 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Failed to create query for method public abstract java.util.List com.example.backend_shopfromhome.Repository.OrdineRepository.findByProdottoIdAndStato(java.lang.Long,com.example.backend_shopfromhome.Model.StatoOrdine); No property 'prodottoId' found for type 'Ordine'
+	at org.springframework.data.jpa.repository.query.PartTreeJpaQuery.<init>(PartTreeJpaQuery.java:107) ~[spring-data-jpa-3.4.1.jar:3.4.1]
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$CreateQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:128) ~[spring-data-jpa-3.4.1.jar:3.4.1]
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$CreateIfNotFoundQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:262) ~[spring-data-jpa-3.4.1.jar:3.4.1]
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$AbstractQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:99) ~[spring-data-jpa-3.4.1.jar:3.4.1]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lookupQuery(QueryExecutorMethodInterceptor.java:116) ~[spring-data-commons-3.4.1.jar:3.4.1]
+	... 61 common frames omitted
+Caused by: org.springframework.data.mapping.PropertyReferenceException: No property 'prodottoId' found for type 'Ordine'
+	at org.springframework.data.mapping.PropertyPath.<init>(PropertyPath.java:94) ~[spring-data-commons-3.4.1.jar:3.4.1]
+	at org.springframework.data.mapping.PropertyPath.create(PropertyPath.java:455) ~[spring-data-commons-3.4.1.jar:3.4.1]
+	at org.springframework.data.mapping.PropertyPath.create(PropertyPath.java:431) ~[spring-data-commons-3.4.1.jar:3.4.1]
+	at org.springframework.data.mapping.PropertyPath.lambda$from$0(PropertyPath.java:384) ~[spring-data-commons-3.4.1.jar:3.4.1]
+	at java.base/java.util.concurrent.ConcurrentMap.computeIfAbsent(ConcurrentMap.java:330) ~[na:na]
+	at org.springframework.data.mapping.PropertyPath.from(PropertyPath.java:366) ~[spring-data-commons-3.4.1.jar:3.4.1]
+	at org.springframework.data.mapping.PropertyPath.from(PropertyPath.java:344) ~[spring-data-commons-3.4.1.jar:3.4.1]
+	at org.springframework.data.repository.query.parser.Part.<init>(Part.java:81) ~[spring-data-commons-3.4.1.jar:3.4.1]
+	at org.springframework.data.repository.query.parser.PartTree$OrPart.lambda$new$0(PartTree.java:259) ~[spring-data-commons-3.4.1.jar:3.4.1]
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) ~[na:na]
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682) ~[na:na]
+	at org.springframework.data.repository.query.parser.PartTree$OrPart.<init>(PartTree.java:260) ~[spring-data-commons-3.4.1.jar:3.4.1]
+	at org.springframework.data.repository.query.parser.PartTree$Predicate.lambda$new$0(PartTree.java:389) ~[spring-data-commons-3.4.1.jar:3.4.1]
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) ~[na:na]
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682) ~[na:na]
+	at org.springframework.data.repository.query.parser.PartTree$Predicate.<init>(PartTree.java:390) ~[spring-data-commons-3.4.1.jar:3.4.1]
+	at org.springframework.data.repository.query.parser.PartTree.<init>(PartTree.java:103) ~[spring-data-commons-3.4.1.jar:3.4.1]
+	at org.springframework.data.jpa.repository.query.PartTreeJpaQuery.<init>(PartTreeJpaQuery.java:101) ~[spring-data-jpa-3.4.1.jar:3.4.1]
+	... 65 common frames omitted
+
+2025-01-30T00:13:53.202+01:00  INFO 20376 --- [Backend_ShopFromHome] [restartedMain] c.e.b.BackendShopFromHomeApplication     : Starting BackendShopFromHomeApplication using Java 17.0.13 with PID 20376 (C:\Users\gianl\Desktop\uni\terzo anno\primo semestre\Ingegneria del software\progetto\backend\target\classes started by gianl in C:\Users\gianl\Desktop\uni\terzo anno\primo semestre\Ingegneria del software\progetto\backend)
+2025-01-30T00:13:53.205+01:00  INFO 20376 --- [Backend_ShopFromHome] [restartedMain] c.e.b.BackendShopFromHomeApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-01-30T00:13:53.250+01:00  INFO 20376 --- [Backend_ShopFromHome] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-30T00:13:53.250+01:00  INFO 20376 --- [Backend_ShopFromHome] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-30T00:13:53.912+01:00  INFO 20376 --- [Backend_ShopFromHome] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-30T00:13:53.924+01:00 DEBUG 20376 --- [Backend_ShopFromHome] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Scanning for JPA repositories in packages com.example.backend_shopfromhome.
+2025-01-30T00:13:53.934+01:00 DEBUG 20376 --- [Backend_ShopFromHome] [restartedMain] o.s.d.r.c.RepositoryComponentProvider    : Identified candidate component class: file [C:\Users\gianl\Desktop\uni\terzo anno\primo semestre\Ingegneria del software\progetto\backend\target\classes\com\example\backend_shopfromhome\Repository\CarrelloRepository.class]
+2025-01-30T00:13:53.934+01:00 DEBUG 20376 --- [Backend_ShopFromHome] [restartedMain] o.s.d.r.c.RepositoryComponentProvider    : Identified candidate component class: file [C:\Users\gianl\Desktop\uni\terzo anno\primo semestre\Ingegneria del software\progetto\backend\target\classes\com\example\backend_shopfromhome\Repository\CategoriaRepository.class]
+2025-01-30T00:13:53.934+01:00 DEBUG 20376 --- [Backend_ShopFromHome] [restartedMain] o.s.d.r.c.RepositoryComponentProvider    : Identified candidate component class: file [C:\Users\gianl\Desktop\uni\terzo anno\primo semestre\Ingegneria del software\progetto\backend\target\classes\com\example\backend_shopfromhome\Repository\DettagliCarrelloRepository.class]
+2025-01-30T00:13:53.934+01:00 DEBUG 20376 --- [Backend_ShopFromHome] [restartedMain] o.s.d.r.c.RepositoryComponentProvider    : Identified candidate component class: file [C:\Users\gianl\Desktop\uni\terzo anno\primo semestre\Ingegneria del software\progetto\backend\target\classes\com\example\backend_shopfromhome\Repository\DettaglioOrdineRepository.class]
+2025-01-30T00:13:53.934+01:00 DEBUG 20376 --- [Backend_ShopFromHome] [restartedMain] o.s.d.r.c.RepositoryComponentProvider    : Identified candidate component class: file [C:\Users\gianl\Desktop\uni\terzo anno\primo semestre\Ingegneria del software\progetto\backend\target\classes\com\example\backend_shopfromhome\Repository\OrdineRepository.class]
+2025-01-30T00:13:53.935+01:00 DEBUG 20376 --- [Backend_ShopFromHome] [restartedMain] o.s.d.r.c.RepositoryComponentProvider    : Identified candidate component class: file [C:\Users\gianl\Desktop\uni\terzo anno\primo semestre\Ingegneria del software\progetto\backend\target\classes\com\example\backend_shopfromhome\Repository\ProdottoRepository.class]
+2025-01-30T00:13:53.935+01:00 DEBUG 20376 --- [Backend_ShopFromHome] [restartedMain] o.s.d.r.c.RepositoryComponentProvider    : Identified candidate component class: file [C:\Users\gianl\Desktop\uni\terzo anno\primo semestre\Ingegneria del software\progetto\backend\target\classes\com\example\backend_shopfromhome\Repository\UtenteRepository.class]
+2025-01-30T00:13:53.980+01:00  INFO 20376 --- [Backend_ShopFromHome] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 54 ms. Found 7 JPA repository interfaces.
+2025-01-30T00:13:54.545+01:00  INFO 20376 --- [Backend_ShopFromHome] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-01-30T00:13:54.558+01:00  INFO 20376 --- [Backend_ShopFromHome] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-01-30T00:13:54.558+01:00  INFO 20376 --- [Backend_ShopFromHome] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-30T00:13:54.614+01:00  INFO 20376 --- [Backend_ShopFromHome] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-01-30T00:13:54.615+01:00  INFO 20376 --- [Backend_ShopFromHome] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1364 ms
+2025-01-30T00:13:54.758+01:00  INFO 20376 --- [Backend_ShopFromHome] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-30T00:13:54.812+01:00  INFO 20376 --- [Backend_ShopFromHome] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.4.Final
+2025-01-30T00:13:54.840+01:00  INFO 20376 --- [Backend_ShopFromHome] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-01-30T00:13:55.114+01:00  INFO 20376 --- [Backend_ShopFromHome] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-30T00:13:55.138+01:00  INFO 20376 --- [Backend_ShopFromHome] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-01-30T00:13:55.424+01:00  INFO 20376 --- [Backend_ShopFromHome] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@575a17ce
+2025-01-30T00:13:55.425+01:00  INFO 20376 --- [Backend_ShopFromHome] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-01-30T00:13:55.468+01:00  WARN 20376 --- [Backend_ShopFromHome] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-30T00:13:55.469+01:00  WARN 20376 --- [Backend_ShopFromHome] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-01-30T00:13:55.484+01:00  INFO 20376 --- [Backend_ShopFromHome] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-01-30T00:13:55.492+01:00 DEBUG 20376 --- [Backend_ShopFromHome] [restartedMain] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(12, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@1c6b940c) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@ecad4ee)
+2025-01-30T00:13:55.492+01:00 DEBUG 20376 --- [Backend_ShopFromHome] [restartedMain] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-9, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@38563553) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@166d4697)
+2025-01-30T00:13:55.492+01:00 DEBUG 20376 --- [Backend_ShopFromHome] [restartedMain] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-3, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@56e67ba2) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@e53b834)
+2025-01-30T00:13:55.492+01:00 DEBUG 20376 --- [Backend_ShopFromHome] [restartedMain] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4003, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@726f800) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@7b035f8d)
+2025-01-30T00:13:55.493+01:00 DEBUG 20376 --- [Backend_ShopFromHome] [restartedMain] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4001, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@1e5d0024) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@ddc89c3)
+2025-01-30T00:13:55.493+01:00 DEBUG 20376 --- [Backend_ShopFromHome] [restartedMain] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4002, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@3d0a9680) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@5c94599b)
+2025-01-30T00:13:55.493+01:00 DEBUG 20376 --- [Backend_ShopFromHome] [restartedMain] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2004, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@2a3e2e0d) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@43453818)
+2025-01-30T00:13:55.493+01:00 DEBUG 20376 --- [Backend_ShopFromHome] [restartedMain] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2005, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@2a921866) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@5434c42e)
+2025-01-30T00:13:55.493+01:00 DEBUG 20376 --- [Backend_ShopFromHome] [restartedMain] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2011, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@f21d6e3) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@65cebae7)
+2025-01-30T00:13:56.529+01:00  INFO 20376 --- [Backend_ShopFromHome] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-30T00:13:56.634+01:00  INFO 20376 --- [Backend_ShopFromHome] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-30T00:13:56.676+01:00 DEBUG 20376 --- [Backend_ShopFromHome] [restartedMain] .c.JpaMetamodelMappingContextFactoryBean : Initializing JpaMetamodelMappingContext…
+2025-01-30T00:13:56.687+01:00 DEBUG 20376 --- [Backend_ShopFromHome] [restartedMain] .c.JpaMetamodelMappingContextFactoryBean : Finished initializing JpaMetamodelMappingContext
+2025-01-30T00:13:56.815+01:00 DEBUG 20376 --- [Backend_ShopFromHome] [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Initializing repository instance for com.example.backend_shopfromhome.Repository.CarrelloRepository…
+2025-01-30T00:13:56.856+01:00 DEBUG 20376 --- [Backend_ShopFromHome] [restartedMain] o.s.d.jpa.repository.query.NamedQuery    : Looking up named query 'Carrello.findByIdUtente'
+2025-01-30T00:13:56.858+01:00 DEBUG 20376 --- [Backend_ShopFromHome] [restartedMain] o.s.d.jpa.repository.query.NamedQuery    : Did not find named query Carrello.findByIdUtente
+2025-01-30T00:13:56.907+01:00 DEBUG 20376 --- [Backend_ShopFromHome] [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Finished creation of repository instance for com.example.backend_shopfromhome.Repository.CarrelloRepository.
+2025-01-30T00:13:56.913+01:00 DEBUG 20376 --- [Backend_ShopFromHome] [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Initializing repository instance for com.example.backend_shopfromhome.Repository.DettagliCarrelloRepository…
+2025-01-30T00:13:56.918+01:00 DEBUG 20376 --- [Backend_ShopFromHome] [restartedMain] o.s.d.jpa.repository.query.NamedQuery    : Looking up named query 'DettagliCarrello.findById_IdCarrello'
+2025-01-30T00:13:56.918+01:00 DEBUG 20376 --- [Backend_ShopFromHome] [restartedMain] o.s.d.jpa.repository.query.NamedQuery    : Did not find named query DettagliCarrello.findById_IdCarrello
+2025-01-30T00:13:56.926+01:00 DEBUG 20376 --- [Backend_ShopFromHome] [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Finished creation of repository instance for com.example.backend_shopfromhome.Repository.DettagliCarrelloRepository.
+2025-01-30T00:13:56.929+01:00 DEBUG 20376 --- [Backend_ShopFromHome] [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Initializing repository instance for com.example.backend_shopfromhome.Repository.ProdottoRepository…
+2025-01-30T00:13:56.934+01:00 DEBUG 20376 --- [Backend_ShopFromHome] [restartedMain] o.s.d.jpa.repository.query.NamedQuery    : Looking up named query 'Prodotto.findByNomeContainingIgnoreCase'
+2025-01-30T00:13:56.935+01:00 DEBUG 20376 --- [Backend_ShopFromHome] [restartedMain] o.s.d.jpa.repository.query.NamedQuery    : Did not find named query Prodotto.findByNomeContainingIgnoreCase
+2025-01-30T00:13:56.937+01:00 DEBUG 20376 --- [Backend_ShopFromHome] [restartedMain] o.s.d.jpa.repository.query.NamedQuery    : Looking up named query 'Prodotto.findByCategoriaId'
+2025-01-30T00:13:56.938+01:00 DEBUG 20376 --- [Backend_ShopFromHome] [restartedMain] o.s.d.jpa.repository.query.NamedQuery    : Did not find named query Prodotto.findByCategoriaId
+2025-01-30T00:13:56.940+01:00 DEBUG 20376 --- [Backend_ShopFromHome] [restartedMain] o.s.d.jpa.repository.query.NamedQuery    : Looking up named query 'Prodotto.findByNomeContaining'
+2025-01-30T00:13:56.941+01:00 DEBUG 20376 --- [Backend_ShopFromHome] [restartedMain] o.s.d.jpa.repository.query.NamedQuery    : Did not find named query Prodotto.findByNomeContaining
+2025-01-30T00:13:56.944+01:00 DEBUG 20376 --- [Backend_ShopFromHome] [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Finished creation of repository instance for com.example.backend_shopfromhome.Repository.ProdottoRepository.
+2025-01-30T00:13:56.951+01:00 DEBUG 20376 --- [Backend_ShopFromHome] [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Initializing repository instance for com.example.backend_shopfromhome.Repository.CategoriaRepository…
+2025-01-30T00:13:56.953+01:00 DEBUG 20376 --- [Backend_ShopFromHome] [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Finished creation of repository instance for com.example.backend_shopfromhome.Repository.CategoriaRepository.
+2025-01-30T00:13:56.957+01:00 DEBUG 20376 --- [Backend_ShopFromHome] [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Initializing repository instance for com.example.backend_shopfromhome.Repository.DettaglioOrdineRepository…
+2025-01-30T00:13:56.962+01:00 DEBUG 20376 --- [Backend_ShopFromHome] [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Finished creation of repository instance for com.example.backend_shopfromhome.Repository.DettaglioOrdineRepository.
+2025-01-30T00:13:56.966+01:00 DEBUG 20376 --- [Backend_ShopFromHome] [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Initializing repository instance for com.example.backend_shopfromhome.Repository.OrdineRepository…
+2025-01-30T00:13:56.969+01:00 DEBUG 20376 --- [Backend_ShopFromHome] [restartedMain] o.s.d.jpa.repository.query.NamedQuery    : Looking up named query 'Ordine.findByDettagliOrdine_ProdottoIdAndStato'
+2025-01-30T00:13:56.969+01:00 DEBUG 20376 --- [Backend_ShopFromHome] [restartedMain] o.s.d.jpa.repository.query.NamedQuery    : Did not find named query Ordine.findByDettagliOrdine_ProdottoIdAndStato
+2025-01-30T00:13:56.973+01:00 DEBUG 20376 --- [Backend_ShopFromHome] [restartedMain] o.s.d.jpa.repository.query.NamedQuery    : Looking up named query 'Ordine.findByDettagliOrdine_ProdottoIdAndStatoIn'
+2025-01-30T00:13:56.973+01:00 DEBUG 20376 --- [Backend_ShopFromHome] [restartedMain] o.s.d.jpa.repository.query.NamedQuery    : Did not find named query Ordine.findByDettagliOrdine_ProdottoIdAndStatoIn
+2025-01-30T00:13:56.976+01:00 DEBUG 20376 --- [Backend_ShopFromHome] [restartedMain] o.s.d.jpa.repository.query.NamedQuery    : Looking up named query 'Ordine.findByUtenteId'
+2025-01-30T00:13:56.976+01:00 DEBUG 20376 --- [Backend_ShopFromHome] [restartedMain] o.s.d.jpa.repository.query.NamedQuery    : Did not find named query Ordine.findByUtenteId
+2025-01-30T00:13:56.977+01:00 DEBUG 20376 --- [Backend_ShopFromHome] [restartedMain] o.s.d.jpa.repository.query.NamedQuery    : Looking up named query 'Ordine.findByStato'
+2025-01-30T00:13:56.978+01:00 DEBUG 20376 --- [Backend_ShopFromHome] [restartedMain] o.s.d.jpa.repository.query.NamedQuery    : Did not find named query Ordine.findByStato
+2025-01-30T00:13:56.980+01:00 DEBUG 20376 --- [Backend_ShopFromHome] [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Finished creation of repository instance for com.example.backend_shopfromhome.Repository.OrdineRepository.
+2025-01-30T00:13:56.988+01:00 DEBUG 20376 --- [Backend_ShopFromHome] [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Initializing repository instance for com.example.backend_shopfromhome.Repository.UtenteRepository…
+2025-01-30T00:13:56.991+01:00 DEBUG 20376 --- [Backend_ShopFromHome] [restartedMain] o.s.d.jpa.repository.query.NamedQuery    : Looking up named query 'Utente.findByRuolo'
+2025-01-30T00:13:56.991+01:00 DEBUG 20376 --- [Backend_ShopFromHome] [restartedMain] o.s.d.jpa.repository.query.NamedQuery    : Did not find named query Utente.findByRuolo
+2025-01-30T00:13:56.992+01:00 DEBUG 20376 --- [Backend_ShopFromHome] [restartedMain] o.s.d.jpa.repository.query.NamedQuery    : Looking up named query 'Utente.findByEmail'
+2025-01-30T00:13:56.993+01:00 DEBUG 20376 --- [Backend_ShopFromHome] [restartedMain] o.s.d.jpa.repository.query.NamedQuery    : Did not find named query Utente.findByEmail
+2025-01-30T00:13:56.996+01:00 DEBUG 20376 --- [Backend_ShopFromHome] [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Finished creation of repository instance for com.example.backend_shopfromhome.Repository.UtenteRepository.
+2025-01-30T00:13:57.050+01:00  WARN 20376 --- [Backend_ShopFromHome] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-30T00:13:57.091+01:00  WARN 20376 --- [Backend_ShopFromHome] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 79ff60e3-f049-45f2-a01d-59071383c4c3
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-01-30T00:13:57.100+01:00  INFO 20376 --- [Backend_ShopFromHome] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-01-30T00:13:57.573+01:00  INFO 20376 --- [Backend_ShopFromHome] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/shopfromhome'
+2025-01-30T00:13:57.657+01:00  INFO 20376 --- [Backend_ShopFromHome] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-01-30T00:13:57.710+01:00  INFO 20376 --- [Backend_ShopFromHome] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-01-30T00:13:57.718+01:00  INFO 20376 --- [Backend_ShopFromHome] [restartedMain] c.e.b.BackendShopFromHomeApplication     : Started BackendShopFromHomeApplication in 4.948 seconds (process running for 5.599)
+2025-01-30T00:14:25.063+01:00  INFO 20376 --- [Backend_ShopFromHome] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-30T00:14:25.064+01:00  INFO 20376 --- [Backend_ShopFromHome] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-01-30T00:14:25.066+01:00  INFO 20376 --- [Backend_ShopFromHome] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-01-30T00:14:25.312+01:00 DEBUG 20376 --- [Backend_ShopFromHome] [http-nio-8080-exec-1] org.hibernate.SQL                        : select o1_0.ID_Ordine,o1_0.Data_Ordine,o1_0.Data_Ritiro,o1_0.Stato,o1_0.Totale_Prezzo,o1_0.ID_Utente from ordine o1_0 left join dettaglio_ordine do1_0 on o1_0.ID_Ordine=do1_0.ID_Ordine where do1_0.ID_Prodotto=? and o1_0.Stato=?
+2025-01-30T00:14:25.358+01:00 DEBUG 20376 --- [Backend_ShopFromHome] [http-nio-8080-exec-1] org.hibernate.SQL                        : select o1_0.ID_Ordine,o1_0.Data_Ordine,o1_0.Data_Ritiro,o1_0.Stato,o1_0.Totale_Prezzo,o1_0.ID_Utente from ordine o1_0 left join dettaglio_ordine do1_0 on o1_0.ID_Ordine=do1_0.ID_Ordine where do1_0.ID_Prodotto=? and o1_0.Stato in (?,?)
+2025-01-30T00:14:25.385+01:00 DEBUG 20376 --- [Backend_ShopFromHome] [http-nio-8080-exec-1] org.hibernate.SQL                        : select p1_0.ID_Prodotto,c1_0.ID_Categoria,c1_0.Descrizione,c1_0.Nome,p1_0.Descrizione,p1_0.Foto,p1_0.Nome,p1_0.Prezzo,p1_0.Quantità_Disponibile from prodotto p1_0 left join categoria c1_0 on c1_0.ID_Categoria=p1_0.ID_Categoria where p1_0.ID_Prodotto=?
+2025-01-30T00:14:25.441+01:00 DEBUG 20376 --- [Backend_ShopFromHome] [http-nio-8080-exec-1] org.hibernate.SQL                        : delete from prodotto where ID_Prodotto=?

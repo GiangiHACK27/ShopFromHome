@@ -3,6 +3,8 @@ package com.example.backend_shopfromhome.Controller;
 import com.example.backend_shopfromhome.Model.Prodotto;
 import com.example.backend_shopfromhome.Service.ProdottoService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -43,10 +45,16 @@ public class ProdottoController {
         return prodottoService.updateProduct(id, prodotto);
     }
 
-    @DeleteMapping("/{id}")
-    public void deleteProduct(@PathVariable Long id) {
-        prodottoService.deleteProduct(id);
+    @DeleteMapping("/delete/{id}")
+    public ResponseEntity<String> deleteProduct(@PathVariable Long id) {
+        try {
+            prodottoService.deleteProduct(id);
+            return ResponseEntity.ok("Prodotto eliminato con successo.");
+        } catch (RuntimeException e) {
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(e.getMessage());
+        }
     }
+
 
     @GetMapping("/{id}")
     public Prodotto getProductById(@PathVariable Long id) {
