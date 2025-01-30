@@ -35,14 +35,15 @@ public class ProdottoController {
     }
 
     @PostMapping
-    public Prodotto createProduct(@RequestBody Prodotto prodotto) {
-        System.out.println("Ricevuta richiesta per creare prodotto: " + prodotto.getNome()); // Aggiungi questo log
-        return prodottoService.createProduct(prodotto);
+    public ResponseEntity<Prodotto> createProduct(@RequestBody Prodotto prodotto) {
+        Prodotto createdProduct = prodottoService.createProduct(prodotto);
+        return ResponseEntity.status(HttpStatus.CREATED).body(createdProduct); // Restituisce il prodotto creato con stato 201
     }
 
     @PutMapping("/{id}")
-    public Prodotto updateProduct(@PathVariable Long id, @RequestBody Prodotto prodotto) {
-        return prodottoService.updateProduct(id, prodotto);
+    public ResponseEntity<Prodotto> updateProduct(@PathVariable Long id, @RequestBody Prodotto prodotto) {
+        Prodotto updatedProduct = prodottoService.updateProduct(id, prodotto);
+        return ResponseEntity.ok(updatedProduct); // Restituisce il prodotto aggiornato con stato 200
     }
 
     @DeleteMapping("/delete/{id}")
@@ -55,10 +56,9 @@ public class ProdottoController {
         }
     }
 
-
     @GetMapping("/{id}")
-    public Prodotto getProductById(@PathVariable Long id) {
-        return prodottoService.getProductById(id);
+    public ResponseEntity<Prodotto> getProductById(@PathVariable Long id) {
+        Prodotto prodotto = prodottoService.getProductById(id);
+        return ResponseEntity.ok(prodotto); // Restituisce il prodotto con stato 200
     }
-
 }

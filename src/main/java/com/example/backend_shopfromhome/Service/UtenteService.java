@@ -22,14 +22,28 @@ public class UtenteService {
         this.passwordEncoder = passwordEncoder;
     }
 
-    public Utente createUser(Utente utente) {
-        if (utente.getPassword() == null || utente.getPassword().isEmpty()) {
-            throw new IllegalArgumentException("La password è obbligatoria");
+    public Utente createUser (Utente utente) {
+        // Controllo dei campi obbligatori
+        if (utente.getNome() == null || utente.getNome().isEmpty() ||
+                utente.getCognome() == null || utente.getCognome().isEmpty() ||
+                utente.getEmail() == null || utente.getEmail().isEmpty() ||
+                utente.getPassword() == null || utente.getPassword().isEmpty()) {
+            throw new IllegalArgumentException("Campi obbligatori mancanti");
+        }
+
+        // Verifica formato email
+        if (!utente.getEmail().matches("^[A-Za-z0-9+_.-]+@[A-Za-z0-9.-]+$")) {
+            throw new IllegalArgumentException("Email non valida");
+        }
+
+        // Verifica password
+        if (utente.getPassword().length() < 6) {
+            throw new IllegalArgumentException("Password troppo corta");
         }
 
         // Verifica se l'email esiste già nel database
-        Optional<Utente> existingUser = utenteRepository.findByEmail(utente.getEmail());
-        if (existingUser.isPresent()) {
+        Optional<Utente> existingUser  = utenteRepository.findByEmail(utente.getEmail());
+        if (existingUser .isPresent()) {
             throw new IllegalArgumentException("L'email è già associata a un altro account.");
         }
 

@@ -55,20 +55,17 @@ public class OrdineController {
 
     @PatchMapping("/{ordineId}/stato")
     public ResponseEntity<?> updateOrderStatus(@PathVariable Long ordineId, @RequestBody String stato) {
-        System.out.println("Aggiornamento stato per ordine ID: " + ordineId + " a stato: " + stato);
-
         try {
-            // Log per vedere la stringa ricevuta
-            System.out.println("Stato ricevuto (prima di conversione): " + stato);
             StatoOrdine nuovoStato = StatoOrdine.fromString(stato); // Usa il metodo di conversione
             Ordine updatedOrder = ordineService.updateOrderStatus(ordineId, nuovoStato);
             return new ResponseEntity<>(updatedOrder, HttpStatus.OK);
         } catch (IllegalArgumentException e) {
-            System.out.println("Errore nella conversione dello stato: " + e.getMessage());
             return ResponseEntity.status(HttpStatus.BAD_REQUEST)
                     .body("Stato non valido. Assicurati che il valore dello stato sia corretto.");
+        } catch (RuntimeException e) {
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST)
+                    .body(e.getMessage());
         } catch (Exception e) {
-            System.out.println("Errore generico: " + e.getMessage());
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
                     .body("Errore nell'aggiornamento dello stato dell'ordine.");
         }
