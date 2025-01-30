@@ -62,7 +62,7 @@ class OrdineControllerTest {
     }
 
     @Test
-    void TC_GO02_01_VerificaCancellazioneOrdineEsistente() {
+    void TC_GO02_01_VerificaannullamentoOrdineEsistente() {
         doNothing().when(ordineService).annullaOrdine(1L);
 
         ResponseEntity<Void> response = ordineController.annullaOrdine(1L);
